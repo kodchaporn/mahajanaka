@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+}
+
+#homepage{
+	width: 100%;
+	height: 100vh;
+	background-image: url(img/home.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#menu{
+	padding-left: 100px;
+	padding-top: 70px;
+	width: 25%;
+	height: 100vh;
+	position: fixed;
+	top: 0%;
+	font-size: 1.7em;
+}
