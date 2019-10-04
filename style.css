@@ -2,20 +2,52 @@ body{
 	margin: 0;
 }
 
+ul{
+	list-style-type: none;
+	font-size: 3em;
+	line-height: 1.8;
+}
+
 #homepage{
 	width: 100%;
 	height: 100vh;
 	background-image: url(img/home.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
+	/*position: relative;*/
 }
 
 #menu{
 	padding-left: 100px;
 	padding-top: 70px;
-	width: 25%;
-	height: 100vh;
-	position: fixed;
-	top: 0%;
-	font-size: 1.7em;
+	/*width: 100%;*/
+	/*height: 100vh;*/
+	position: relative;
+	/*background-color: green;*/
+	/*top: 0%;*/
 }
+
+#content{
+	background-color: pink;
+	padding: 80px;
+	width: 50%;
+	right: 0%;
+	height: 100vh;
+	position: absolute;
+	top: 0%;
+	/*display: flex;
+	align-content: center;
+	justify-content: center;*/
+}
+
+[x="0"]{left:0%;}
+[x="1"]{left:20%;}
+[x="2"]{left:40%;}
+[x="3"]{left:60%;}
+[x="4"]{left:80%;}
+[y="-1"]{top:-20%;}
+[y="0"]{top:0%;}
+[y="1"]{top:20%;}
+[y="2"]{top:40%;}
+[y="3"]{top:60%;}
+[y="4"]{top:80%;}
