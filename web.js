@@ -12,7 +12,8 @@ function clickStory() {
 	m_story.classList.add("clickMenu");
 	content.style.zIndex = 4;
 	content.innerHTML = `Lorem ipsum dolor sit amet, consectetur 
-	adipisicing elit, sed do eiusmod<br><button>Read more</button>`;
+	adipisicing elit, sed do eiusmod<br><button id="b_story" 
+	onclick="window.location.href = 'story.html';">Read more</button>`;
 }
 
 document.getElementById("m_history").onclick = function() {clickHistory()};
@@ -24,7 +25,8 @@ function clickHistory() {
 	content.style.zIndex = 4;
 	content.innerHTML = `tempor incididunt ut labore et dolore magna 
 	aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-	laboris nisi ut aliquip ex ea <br><button>Read more</button>`;
+	laboris nisi ut aliquip ex ea <br><button id="b_history" 
+	onclick="window.location.href = 'history.html';">Read more</button>`;
 }
 
 document.getElementById("m_media").onclick = function() {clickMedia()};
@@ -34,7 +36,8 @@ function clickMedia() {
 	homepage.classList.add("media");
 	m_media.classList.add("clickMenu");
 	content.style.zIndex = 4;
-	content.innerHTML = `ด่หก้ดหหวน่ดฟนร<br><button>Read more</button>`;
+	content.innerHTML = `ด่หก้ดหหวน่ดฟนร<br><button id="b_media" 
+	onclick="window.location.href = 'media.html';">Read more</button>`;
 }
 
 document.getElementById("m_artist").onclick = function() {clickArtist()};
@@ -44,7 +47,8 @@ function clickArtist() {
 	homepage.classList.add("artist");
 	m_artist.classList.add("clickMenu");
 	content.style.zIndex = 4;
-	content.innerHTML = `sdjfhsaihfak;hf;a<br><button>Read more</button>`;
+	content.innerHTML = `sdjfhsaihfak;hf;a<br><button id="b_artist" 
+	onclick="window.location.href = 'artist.html';">Read more</button>`;
 }
 
 function clearClick(){
@@ -57,3 +61,7 @@ function clearClick(){
 	homepage.classList.remove("media");
 	homepage.classList.remove("artist");
 }
+
+// function readArtist(){
+// 	document.getElementById("b_artist").href = "artist.html";
+// }
