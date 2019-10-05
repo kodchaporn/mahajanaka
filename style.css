@@ -2,51 +2,61 @@ body{
 	margin: 0;
 }
 
+h2{
+	margin: 0;
+}
+
+p{
+	font-size: 0.7em;
+}
+
 img{
 	cursor: pointer;
 }
 
 li{
 	list-style-type: none;
+	cursor: pointer;	
+}
+
+.h_menu{
 	font-size: 3em;
 	line-height: 1.8;
-	cursor: pointer;
 	width: 20px;
 }
 
-/*a{
-	background-color: black;
-	text-decoration: none;
-	color: white;
-	padding: 10px;
-	margin: 10px;
-}*/
+.a_menu{
+	font-size: 1.5em;
+	line-height: 1.5;
+	width: 25%;
+	margin: 0;
+}
 
 .home{
-	background-image: url(img/home.png);
+	background-image: url(img/home/home.png);
 	background-size: 100%;
 }
 
 .story{
-	background-image: url(img/story.jpg);
+	background-image: url(img/home/story.jpg);
 	background-size: 100%;
 	z-index: 1;
 }
 
 .history{
-	background-image: url(img/history.jpg);
+	background-image: url(img/home/history.jpg);
 	background-size: 100%;
 	z-index: 1;
 }
 
 .media{
-	background-image: url(img/media.jpg);
+	background-image: url(img/home/media.jpg);
 	background-size: 100%;
 	z-index: 1;
 }
 
 .artist{
-	background-image: url(img/artist.jpg);
+	background-image: url(img/home/artist.jpg);
 	background-size: 100%;
 	z-index: 1;
 }
@@ -54,6 +64,10 @@ li{
 .clickMenu{
 	list-style-type: disc;
 	color: red;
+}
+
+.artistImg01{
+	background-image: url(img/artist/001Re.jpg);
 }
 
 #homepage{
@@ -89,8 +103,40 @@ li{
 	font-size: 1.7em;
 }
 
+#c_art{
+	/*background: rgba(4, 255, 255, 0.7);*/
+	padding: 50px;
+	width: 70%;
+	box-sizing: border-box;
+	/*display: flex;*/
+	height: 100vh;
+	position: absolute;
+	top: 0%;
+	z-index: -2;
+	font-size: 1.7em;
+}
+
+#artistImg{
+	/*background-color: red;*/
+	width: 100%;
+	height: 60%;
+	background-repeat: no-repeat;
+}
+
+.artistName{
+	position: absolute;
+	left: 25%;
+}
+
+.port{
+	/*background-color: pink;*/
+	width: 60%;
+	height: 25%;
+	left: 25%;
+	position: absolute;
+	top: 20%;
+}
+
 [x="0"]{left:0%;}
-[x="1"]{left:20%;}
-[x="2"]{left:40%;}
-[x="3"]{left:60%;}
-[x="4"]{left:80%;}
+[x="1"]{left:10%;}
+[x="2"]{left:30%;}
