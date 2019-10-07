@@ -90,19 +90,6 @@ li{
 	top: 0%;
 }
 
-#content{
-	background: rgba(255, 255, 255, 0.7);
-	padding: 80px;
-	width: 50%;
-	box-sizing: border-box;
-	height: 70vh;
-	position: absolute;
-	top: 10%;
-	z-index: -2;
-	text-align:center;
-	font-size: 1.7em;
-}
-
 #c_art{
 	/*background: rgba(4, 255, 255, 0.7);*/
 	padding: 50px;
