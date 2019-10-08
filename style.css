@@ -15,16 +15,21 @@
 
 body{
 	margin: 0;
-	font-family: Chonburi;
+	font-family: Chonburi !important;
 	overflow: hidden;
+}
+
+h1{
+	font-family: Chonburi !important;
 }
 
 h2{
 	margin: 0;
+	font-family: Chonburi !important;
 }
 
 p{
-	font-size: 0.7em;
+	font-size: 1.6em;
 }
 
 img{
@@ -190,4 +195,8 @@ li{
 	left: 25%;
 	position: absolute;
 	top: 20%;
+}
+
+.innerMenu{
+	line-height: 2.3;
 }
