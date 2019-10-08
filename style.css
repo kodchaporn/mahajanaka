@@ -1,5 +1,22 @@
+@font-face {
+   font-family: Chonburi;
+   src: url(font/font/chonburi-regular.ttf);
+}
+
+@font-face {
+   font-family: Srinakharinwirot;
+   src: url(font/font/Srinakharinwirot-Regular.otf);
+}
+
+@font-face {
+   font-family: BaiJamjuree;
+   src: url(font/font/BaiJamjuree-Regular.ttf);
+}
+
 body{
 	margin: 0;
+	font-family: Chonburi;
+	overflow: hidden;
 }
 
 h2{
@@ -19,11 +36,12 @@ li{
 	cursor: pointer;	
 }
 
-.h_menu{
+/*.h_menu{
+
 	font-size: 3em;
 	line-height: 1.8;
 	width: 20px;
-}
+}*/
 
 .a_menu{
 	font-size: 1.5em;
@@ -47,6 +65,18 @@ li{
 	background-image: url(img/home/history.jpg);
 	background-size: 100%;
 	z-index: 1;
+}
+
+.obj-h{
+	background-image: url(img/home/obj-h.png);
+	background-size: 100%;
+	z-index: 3;
+	background-repeat: no-repeat;
+}
+
+.obj-h:hover{
+	transform: scale(1.1);
+
 }
 
 .media{
@@ -78,17 +108,36 @@ li{
 	/*position: relative;*/
 	background-color: white;
 	background-repeat: no-repeat;
+	position: relative;
 }
 
-#menu{
-	padding-left: 100px;
-	padding-top: 70px;
-	/*width: 100%;*/
-	height: 80vh;
-	position: relative;
-	/*background-color: green;*/
+/*#menu{
+	position: absolute;
+	background-color: green;
 	top: 0%;
+}*/
+
+#logo{
+	position: absolute;
+	left: 50px;
+	top: 30px;
 }
+
+#listMenu{
+	position: absolute;
+	top: 130px;
+	left: 30px;
+	font-size: 2em;
+	line-height: 1.8;
+}
+
+#obj{
+	/*background-color: red;*/
+	width: 100%;
+	height: 100vh;
+
+}
+/*--------------------------------------------------------------------*/
 
 #c_art{
 	/*background: rgba(4, 255, 255, 0.7);*/
@@ -123,7 +172,3 @@ li{
 	position: absolute;
 	top: 20%;
 }
-
-[x="0"]{left:0%;}
-[x="1"]{left:10%;}
-[x="2"]{left:30%;}
