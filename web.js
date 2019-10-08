@@ -10,6 +10,7 @@ function clickStory() {
 	homepage.classList.add("story");
 	m_story.classList.add("clickMenu");
 	m_story.classList.add("lightGreen");
+	document.getElementById("obj").onclick = function() {window.location.href = "story.html";};
 }
 
 document.getElementById("m_history").onclick = function() {clickHistory()};
@@ -20,6 +21,8 @@ function clickHistory() {
 	obj.classList.add("obj-h");
 	m_history.classList.add("clickMenu");
 	m_history.classList.add("lightOrange");
+	document.getElementById("obj").onclick = function() {window.location.href = "history.html";};
+
 }
 
 document.getElementById("m_media").onclick = function() {clickMedia()};
@@ -29,6 +32,7 @@ function clickMedia() {
 	homepage.classList.add("media");
 	m_media.classList.add("clickMenu");
 	m_media.classList.add("darkOrange");
+	document.getElementById("obj").onclick = function() {window.location.href = "media.html";};
 }
 
 document.getElementById("m_artist").onclick = function() {clickArtist()};
@@ -38,6 +42,7 @@ function clickArtist() {
 	homepage.classList.add("artist");
 	m_artist.classList.add("clickMenu");
 	m_artist.classList.add("green");
+	document.getElementById("obj").onclick = function() {window.location.href = "artist.html";};
 }
 
 function clearClick(){
@@ -60,4 +65,3 @@ function clearClick(){
 // 	document.getElementById("b_artist").href = "artist.html";
 // }
 
-document.getElementById("obj").onclick = function() {window.location.href = "history.html";};
