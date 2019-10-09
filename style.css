@@ -114,8 +114,8 @@ li{
 	background-size: 100%;
 	z-index: 2;
 	background-repeat: no-repeat;
-	animation: obj-scl .3s infinite alternate ;
-	transition: all .3s;
+	animation: obj-scl .5s infinite alternate ;
+	transition: all .5s;
 }
 
 .obj-s{
@@ -123,8 +123,8 @@ li{
 	background-size: 100%;
 	z-index: 2;
 	background-repeat: no-repeat;
-	animation: obj-scl .3s infinite alternate ;
-	transition: all .3s;
+	animation: obj-scl .5s infinite alternate ;
+	transition: all .5s;
 }
 
 .obj-a{
@@ -132,8 +132,8 @@ li{
 	background-size: 100%;
 	z-index: 2;
 	background-repeat: no-repeat;
-	animation: obj-scl .3s infinite alternate ;
-	transition: all .3s;
+	animation: obj-scl .5s infinite alternate ;
+	transition: all .5s;
 }
 
 
@@ -242,3 +242,4 @@ li{
 .innerMenu{
 	line-height: 2.3;
 }
+
