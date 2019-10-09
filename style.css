@@ -244,7 +244,7 @@ li{
 }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
 	#logo{
 	position: relative;
 	left: 50px;
@@ -253,7 +253,7 @@ li{
 #listMenu{
 	position: relative;
 	left: 30px;
-	font-size: 2.7em;
+	font-size: 300%;
 	line-height: 1.8;
 	color: #055464;
 	width: 70px;
