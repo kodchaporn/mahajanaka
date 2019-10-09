@@ -46,6 +46,7 @@ document.getElementById("m_artist").onclick = function() {clickArtist()};
 function clickArtist() {
 	clearClick()
 	homepage.classList.add("artist");
+	obj.classList.add("obj-a");
 	obj.classList.add("obj-scale");
 	m_artist.classList.add("clickMenu");
 	m_artist.classList.add("green");
@@ -67,8 +68,10 @@ function clearClick(){
 	homepage.classList.remove("history");
 	homepage.classList.remove("media");
 	homepage.classList.remove("artist");
+	homepage.classList.remove("home-2");
 	obj.classList.remove("obj-h");
 	obj.classList.remove("obj-s");
+	obj.classList.remove("obj-a");
 }
 
 // function readArtist(){

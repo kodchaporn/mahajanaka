@@ -113,6 +113,14 @@ li{
 	background-repeat: no-repeat;
 }
 
+.obj-a{
+	background-image: url(img/home/obj-a.png);
+	background-size: 100%;
+	z-index: 3;
+	background-repeat: no-repeat;
+}
+
+
 .obj-scale:hover{
 	transform: scale(1.1);
 	cursor: pointer;
