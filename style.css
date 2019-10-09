@@ -41,11 +41,20 @@ li{
 	cursor: pointer;	
 }
 
-/*.h_menu{
-	font-size: 3em;
-	line-height: 1.8;
-	width: 20px;
-}*/
+@keyframes obj-scl{
+	from{transform: scale(1);}
+	to{transform: scale(1.1);}
+}
+
+@keyframes show-bg{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+
+@keyframes show-obj{
+	from{transform: rotate(30deg);}
+	to{transform: rotate(0deg);}
+}
 
 .darkGreen{
 	color: #055464;
@@ -75,20 +84,24 @@ li{
 }
 
 .home-1{
-	background-image: url(img/home/home_1.png);
+	background-image: url(img/home/bg-home.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
-
+	animation: show-bg 1s 1 reverse;
+	transform: scale(1);
 }
 
 .home-2{
-	background-image: url(img/home/home_2.png);
+	background-image: url(img/home/obj-home.png);
 	background-size: 100%;
-	transition: all 1s;
+	background-repeat: no-repeat;
+	animation: show-obj 2s;
+	transform: scale(1);
 }
 
+
 .story{
-	background-image: url(img/home/story.jpg);
+	background-image: url(img/home/story.png);
 	background-size: 100%;
 	z-index: 1;
 }
@@ -99,15 +112,7 @@ li{
 	z-index: 1;
 }
 
-@keyframes obj-scl{
-	from{transform: scale(1);}
-	to{transform: scale(1.1);}
-}
 
-@keyframes show-obj{
-	from{transform: rotate(10deg) scale(1);}
-	to{transform: rotate(-3600deg) scale(0);}
-}
 
 .obj-h{
 	background-image: url(img/home/obj-h.png);
@@ -172,8 +177,7 @@ li{
 	background-repeat: no-repeat;
 	position: absolute;
 	z-index: -1;
-	animation: show-obj 2s 1 reverse;
-	transform: scale(1);
+	
 }
 
 /*#menu{
@@ -242,4 +246,3 @@ li{
 .innerMenu{
 	line-height: 2.3;
 }
-

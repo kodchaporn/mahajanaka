@@ -1,8 +1,8 @@
 window.onload = toHomepage();
 function toHomepage(){
 	clearClick();
-	obj.classList.add("home-1");
-	homepage.classList.add("home-2");
+	homepage.classList.add("home-1");
+	obj.classList.add("home-2");
 }
 
 document.getElementById("m_story").onclick = function() {clickStory()};
@@ -55,7 +55,8 @@ function clickArtist() {
 
 function clearClick(){
 	obj.classList.remove("obj-scale");
-	obj.classList.remove("home-1");
+	homepage.classList.remove("home-1");
+	obj.classList.remove("home-2");
 	m_story.classList.remove("clickMenu");
 	m_story.classList.remove("lightGreen");
 	m_history.classList.remove("clickMenu");
@@ -68,7 +69,6 @@ function clearClick(){
 	homepage.classList.remove("history");
 	homepage.classList.remove("media");
 	homepage.classList.remove("artist");
-	homepage.classList.remove("home-2");
 	obj.classList.remove("obj-h");
 	obj.classList.remove("obj-s");
 	obj.classList.remove("obj-a");
