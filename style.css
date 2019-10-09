@@ -74,9 +74,17 @@ li{
 	margin: 0;
 }
 
-.home{
-	background-image: url(img/home/home.png);
+.home-1{
+	background-image: url(img/home/home_1.png);
 	background-size: 100%;
+	background-repeat: no-repeat;
+
+}
+
+.home-2{
+	background-image: url(img/home/home_2.png);
+	background-size: 100%;
+	transition: all 1s;
 }
 
 .story{
@@ -98,7 +106,14 @@ li{
 	background-repeat: no-repeat;
 }
 
-.obj-h:hover{
+.obj-s{
+	background-image: url(img/home/obj-s.png);
+	background-size: 100%;
+	z-index: 3;
+	background-repeat: no-repeat;
+}
+
+.obj-scale:hover{
 	transform: scale(1.1);
 	cursor: pointer;
 }

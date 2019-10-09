@@ -1,6 +1,8 @@
+window.onload = toHomepage();
 function toHomepage(){
-	clearClick()
-	homepage.classList.add("home");
+	clearClick();
+	obj.classList.add("home-1");
+	homepage.classList.add("home-2");
 }
 
 document.getElementById("m_story").onclick = function() {clickStory()};
@@ -8,6 +10,8 @@ document.getElementById("m_story").onclick = function() {clickStory()};
 function clickStory() {
 	clearClick()
 	homepage.classList.add("story");
+	obj.classList.add("obj-s");
+	obj.classList.add("obj-scale");
 	m_story.classList.add("clickMenu");
 	m_story.classList.add("lightGreen");
 	document.getElementById("obj").onclick = function() {window.location.href = "story.html";};
@@ -19,6 +23,7 @@ function clickHistory() {
 	clearClick()
 	homepage.classList.add("history");
 	obj.classList.add("obj-h");
+	obj.classList.add("obj-scale");
 	m_history.classList.add("clickMenu");
 	m_history.classList.add("lightOrange");
 	document.getElementById("obj").onclick = function() {window.location.href = "history.html";};
@@ -30,6 +35,7 @@ document.getElementById("m_media").onclick = function() {clickMedia()};
 function clickMedia() {
 	clearClick()
 	homepage.classList.add("media");
+	obj.classList.add("obj-scale");
 	m_media.classList.add("clickMenu");
 	m_media.classList.add("darkOrange");
 	document.getElementById("obj").onclick = function() {window.location.href = "media.html";};
@@ -40,12 +46,15 @@ document.getElementById("m_artist").onclick = function() {clickArtist()};
 function clickArtist() {
 	clearClick()
 	homepage.classList.add("artist");
+	obj.classList.add("obj-scale");
 	m_artist.classList.add("clickMenu");
 	m_artist.classList.add("green");
 	document.getElementById("obj").onclick = function() {window.location.href = "artist.html";};
 }
 
 function clearClick(){
+	obj.classList.remove("obj-scale");
+	obj.classList.remove("home-1");
 	m_story.classList.remove("clickMenu");
 	m_story.classList.remove("lightGreen");
 	m_history.classList.remove("clickMenu");
@@ -59,6 +68,7 @@ function clearClick(){
 	homepage.classList.remove("media");
 	homepage.classList.remove("artist");
 	obj.classList.remove("obj-h");
+	obj.classList.remove("obj-s");
 }
 
 // function readArtist(){
