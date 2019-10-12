@@ -73,6 +73,7 @@ function clearClick(){
 	obj.classList.remove("obj-h");
 	obj.classList.remove("obj-s");
 	obj.classList.remove("obj-a");
+	obj.classList.remove("obj-m");
 }
 
 function myFunction() {
@@ -89,6 +90,7 @@ function checkWidth(){
 	let chkWidth = document.body.getBoundingClientRect();
 	if (chkWidth.width < 376) {
 		myTopnav.classList.add("topnav");
+		logo.outerHTML = "";
 	}
 	else{
 		myTopnav.outerHTML = "";

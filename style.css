@@ -288,7 +288,8 @@ li{
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: white;
+  box-shadow: 2px 5px 10px #888888;
 }
 
 .topnav a {
@@ -326,7 +327,7 @@ li{
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
   }
