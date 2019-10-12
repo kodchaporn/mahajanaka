@@ -117,7 +117,6 @@ li{
 .obj-h{
 	background-image: url(img/home/obj-h.png);
 	background-size: 100%;
-	z-index: 2;
 	background-repeat: no-repeat;
 	animation: obj-scl .5s infinite alternate ;
 	transition: all .5s;
@@ -126,7 +125,6 @@ li{
 .obj-s{
 	background-image: url(img/home/obj-s.png);
 	background-size: 100%;
-	z-index: 2;
 	background-repeat: no-repeat;
 	animation: obj-scl .5s infinite alternate ;
 	transition: all .5s;
@@ -135,7 +133,14 @@ li{
 .obj-a{
 	background-image: url(img/home/obj-a.png);
 	background-size: 100%;
-	z-index: 2;
+	background-repeat: no-repeat;
+	animation: obj-scl .5s infinite alternate ;
+	transition: all .5s;
+}
+
+.obj-m{
+	background-image: url(img/home/obj-m.png);
+	background-size: 100%;
 	background-repeat: no-repeat;
 	animation: obj-scl .5s infinite alternate ;
 	transition: all .5s;
@@ -222,6 +227,10 @@ li{
 
 .innerMenu{
 	line-height: 2.3;
+}
+
+.menu{
+	width: 35%;
 }
 
 @media only screen and (max-width: 375px) {

@@ -35,6 +35,7 @@ document.getElementById("m_media").onclick = function() {clickMedia()};
 function clickMedia() {
 	clearClick()
 	homepage.classList.add("media");
+	obj.classList.add("obj-m");
 	obj.classList.add("obj-scale");
 	m_media.classList.add("clickMenu");
 	m_media.classList.add("darkOrange");
