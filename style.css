@@ -289,7 +289,10 @@ li{
 .topnav {
   overflow: hidden;
   background-color: white;
-  box-shadow: 2px 5px 10px #888888;
+  border: 1px #099690;
+  border-radius: 5px;
+  border-style: none solid solid solid;
+  /*box-shadow: 2px 5px 10px #099690;*/
 }
 
 .topnav a {
