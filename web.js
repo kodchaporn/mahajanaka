@@ -75,7 +75,23 @@ function clearClick(){
 	obj.classList.remove("obj-a");
 }
 
-// function readArtist(){
-// 	document.getElementById("b_artist").href = "artist.html";
-// }
+function myFunction() {
+		var x = document.getElementById("myTopnav");
+		if (x.className === "topnav") {
+			x.className += " responsive";
+		} else {
+			x.className = "topnav";
+		}
+	}
 
+window.onload = checkWidth();
+function checkWidth(){
+	let chkWidth = document.body.getBoundingClientRect();
+	if (chkWidth.width < 376) {
+		myTopnav.classList.add("topnav");
+	}
+	else{
+		myTopnav.outerHTML = "";
+		logo.src = `img/home/logo.svg`;
+	}
+}

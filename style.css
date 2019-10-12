@@ -1,16 +1,16 @@
 @font-face {
-   font-family: Chonburi;
-   src: url(font/font/chonburi-regular.ttf);
+	font-family: Chonburi;
+	src: url(font/font/chonburi-regular.ttf);
 }
 
 @font-face {
-   font-family: Srinakharinwirot;
-   src: url(font/font/Srinakharinwirot-Regular.otf);
+	font-family: Srinakharinwirot;
+	src: url(font/font/Srinakharinwirot-Regular.otf);
 }
 
 @font-face {
-   font-family: BaiJamjuree;
-   src: url(font/font/BaiJamjuree-Regular.ttf);
+	font-family: BaiJamjuree;
+	src: url(font/font/BaiJamjuree-Regular.ttf);
 }
 
 body{
@@ -177,100 +177,105 @@ li{
 	position: absolute;
 	background-color: green;
 	top: 0%;
-}*/
+	}*/
 
 
 
 
 
-#obj{
-	/*background-color: red;*/
-	width: 100%;
-	height: 100vh;
+	#obj{
+		/*background-color: red;*/
+		width: 100%;
+		height: 100vh;
 
-}
-/*--------------------------------------------------------------------*/
+	}
+	/*--------------------------------------------------------------------*/
 
-#c_art{
-	/*background: rgba(4, 255, 255, 0.7);*/
-	padding: 50px;
-	width: 70%;
-	box-sizing: border-box;
-	/*display: flex;*/
-	height: 100vh;
-	position: absolute;
-	top: 0%;
-	z-index: -2;
-	font-size: 1.7em;
-}
+	#c_art{
+		/*background: rgba(4, 255, 255, 0.7);*/
+		padding: 50px;
+		width: 70%;
+		box-sizing: border-box;
+		/*display: flex;*/
+		height: 100vh;
+		position: absolute;
+		top: 0%;
+		z-index: -2;
+		font-size: 1.7em;
+	}
 
-#artistImg{
-	/*background-color: red;*/
-	width: 100%;
-	height: 60%;
-	background-repeat: no-repeat;
-}
+	#artistImg{
+		/*background-color: red;*/
+		width: 100%;
+		height: 60%;
+		background-repeat: no-repeat;
+	}
 
-.artistName{
-	position: absolute;
-	left: 25%;
-}
+	.artistName{
+		position: absolute;
+		left: 25%;
+	}
 
-.port{
-	/*background-color: pink;*/
-	width: 60%;
-	height: 25%;
-	left: 25%;
-	position: absolute;
-	top: 20%;
-}
+	.port{
+		/*background-color: pink;*/
+		width: 60%;
+		height: 25%;
+		left: 25%;
+		position: absolute;
+		top: 20%;
+	}
 
-.innerMenu{
-	line-height: 2.3;
-}
+	.innerMenu{
+		line-height: 2.3;
+	}
 
-.menu{
-	width: 35%;
-}
+	.menu{
+		width: 35%;
+	}
 
-@media only screen and (max-width: 375px) {
-  .menu{width: 100%;text-align: center;}
-  #listMenu {
-    font-size: 1.5em;
-    line-height: 1.8;
-    color: #055464;
-    width: 100%;
-    padding-left: 0px;
-}
-#homepage{
-	width: 100%;
-	height: 100vh;
-	background-color: white;
-	background-repeat: no-repeat;
-	position: absolute;
-	z-index: -1;
-	top: auto;
-}
-}
+	@media only screen and (max-width: 375px) {
+		#logo{
+			left: 0%;
+			position: relative;
+			width: 15%;
+		}
+		.menu{width: 100%;text-align: center;}
+		#listMenu {
+			font-size: 1.5em;
+			line-height: 1.8;
+			color: #055464;
+			width: 100%;
+			padding-left: 0px;
+		}
+		#homepage{
+			width: 100%;
+			height: 100vh;
+			background-color: white;
+			background-repeat: no-repeat;
+			position: absolute;
+			z-index: -1;
+			top: auto;
+		}
+	}
 
-@media only screen and (min-width: 800px) {
-	#logo{
-	position: relative;
-	left: 50px;
-	top: 30px;
-}
-#listMenu{
-	position: relative;
-	left: 30px;
-	font-size: 2.7em;
-	line-height: 1.8;
-	color: #055464;
-	width: 70px;
-}
-#homepage{
-	width: 100%;
-	height: 100vh;
-	top: 0px;
+	@media only screen and (min-width: 800px) {
+		#logo{
+			position: relative;
+			left: 50px;
+			top: 30px;
+		}
+		#listMenu{
+			position: relative;
+			left: 30px;
+			font-size: 2.7em;
+			line-height: 1.8;
+			color: #055464;
+			width: 70px;
+		}
+		#homepage{
+			width: 100%;
+			height: 100vh;
+			top: 0px;
 	/*display: flex;
 	align-content: center;*/
 	/*position: relative;*/
@@ -279,4 +284,55 @@ li{
 	position: absolute;
 	z-index: -1;
 }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
