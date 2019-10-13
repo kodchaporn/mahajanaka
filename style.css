@@ -13,10 +13,18 @@
 	src: url(font/font/BaiJamjuree-Regular.ttf);
 }
 
+.baiJamjuree{
+	font-family: BaiJamjuree !important;
+}
+
+.Srinakharinwirot{
+	font-family: Srinakharinwirot !important;
+}
+
 body{
 	margin: 0;
 	font-family: Chonburi !important;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 h1{
@@ -29,7 +37,7 @@ h2{
 }
 
 p{
-	font-size: 1.6em;
+	font-size: 1.2em;
 }
 
 img{
@@ -226,12 +234,18 @@ li{
 	}
 
 	.innerMenu{
-		line-height: 2.3;
+		line-height: 2;
+	}
+
+	.innerMenu li{
+		font-size: 1.5em;
 	}
 
 	.menu{
 		width: 35%;
 	}
+
+
 
 	@media only screen and (max-width: 375px) {
 		#logo{
@@ -339,4 +353,40 @@ li{
     display: block;
     text-align: left;
   }
+}
+
+#warp{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	float: left;
+	display: inline-flex;
+}
+
+.h-menu{
+	width: 30%;
+	height: 100vh;
+	padding: 30px;
+	position: relative;
+	background-color: white;
+	margin: 0px;
+}
+
+.h-img{
+	width: 20%;
+	height: 100vh;
+	padding: 20px;
+	position: relative;
+	/*background-color: red;*/
+	top: 0%;
+	justify-content: center;
+	display: inline-grid;
+}
+
+.h-content{
+	width: 50%;
+	height: 100vh;
+	position: relative;
+	/*background-color: pink;*/
+	padding: 20px;
 }
