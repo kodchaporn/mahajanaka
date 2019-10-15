@@ -54,6 +54,10 @@ li{
 a{
 	text-decoration: none;
 }
+#caption{
+	padding: 30px;
+
+}
 
 @keyframes obj-scl{
 	from{transform: scale(1);}
