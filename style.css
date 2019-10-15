@@ -61,7 +61,7 @@ a{
 
 @keyframes obj-scl{
 	from{transform: scale(1);}
-	to{transform: scale(1.1);}
+	to{transform: scale(1.05);}
 }
 
 @keyframes show-bg{
