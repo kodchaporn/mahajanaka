@@ -1,7 +1,7 @@
 window.onload = checkWidth();
 function checkWidth(){
 	let chkWidth = document.body.getBoundingClientRect();
-	if (chkWidth.width < 376) {
+	if (chkWidth.width < 400) {
 		myTopnav.classList.add("topnav");
 		// logo.outerHTML = "";
 	}
