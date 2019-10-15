@@ -10,17 +10,31 @@
 	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style type="text/css">
+		@media only screen and (min-width: 770px) {
+			#menuBar{display: none;}
+		}
+	</style>
 </head>
 <body>
-	<div class="" id="myTopnav">
-		<img src="img/home/logo.svg" id="logo" onclick="toHomepage()">
-		<a href="#home" class="active">Home</a>
-		<a href="#news">News</a>
-		<a href="#contact">Contact</a>
-		<a href="#about">About</a>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			<i class="fa fa-bars green"></i>
-		</a>
+	<div class="menu" id="menuBar">
+		<div id="divLogo">
+			<img src="img/home/logo.svg" id="logo" onclick="toHomepage()">
+		</div>
+		
+		<!-- <div id="listMenu">
+			<ul>
+				<li id="m_story" class="h_menu">STORY</li>
+				<li id="m_history" class="h_menu">HISTORY</li>
+				<li id="m_media" class="h_menu">MEDIA</li>
+				<li id="m_artist" class="h_menu">ARTIST</li>
+			</ul>
+		</div> -->
+		<div id="clickMe"></div>
+		<div id="caption">
+			<p id="captionText"></p>
+		</div>
 	</div>
 
 	<div id="warp">
@@ -40,8 +54,9 @@
 		</div>
 		
 		<div class="h-content setOverflow" id="h_content">
+			<h1 class="lightOrange Srinakharinwirot" id="h_innerHead" style="letter-spacing: 2px;">ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช</h1>
 			<div class="h-section-1" id="sec_1">
-				<h1 class="lightOrange Srinakharinwirot" id="h_innerHead" style="letter-spacing: 2px;">ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช</h1>
+				
 				<img src="img/history/KingRe.jpg" id="h_imgContent">
 				<div class="h-innerContent">
 					<p class="darkGreen baiJamjuree" id="h_innerContent_sec1">
@@ -122,22 +137,6 @@
 	</div>
 
 	<script type="text/javascript">
-		window.onload = checkWidth();
-		function checkWidth(){	
-			let chkWidth = document.body.getBoundingClientRect();
-			if (chkWidth.width < 376) {
-				myTopnav.classList.add("topnav");
-				logo.outerHTML = "";
-				h_menu.outerHTML = "";
-				h_left.outerHTML = "";
-			}
-			else{
-				myTopnav.outerHTML = "";
-				document.getElementById("h_menu1").onclick = function() {clickContent1()};
-				document.getElementById("h_menu2").onclick = function() {clickContent2()};
-			}
-		};
-
 		content = [
 		{
 			"i":"“นักเขียน นักประพันธ์ งานสำคัญก็คือ แสดงความคิดของตอนออกมาเป็นเรื่องชีวิต หรือเรื่องแต่งขึ้นมา เพื่อให้ผู้อื่นได้ประโยชน์ คือความรู้บ้าง บันเทิงบ้าง นักแสดงความคิดสำคัญมาก เพราะว่ามีอิทธิพลต่อชีวิตของมวลมนุษย์ อาจทำให้เกิดความคล้อยตามไปและตัวท่านเขียนดีก็ยิ่งคล้อยตามกันมาก ฉะนั้น นักประพันธ์ต้องมีความรับผิดชอบสูง เพราะท่านเป็นผู้ปั้นความคิดและความบริสุทธิ์ในความคิด จึงเป็นเรื่องที่สำคัญ ดังบทความกลั่นกรองไว้ในสมองว่า สิ่งที่จะเขียนออกมาจะไม่แสลง ไม่ทำลายความคิดของประชากร ไม่ทำลายผู้อื่น และตนเอง คือมีเสรีภาพในการเขียนอย่างเต็มที่ในขอบเขตของศีลธรรม”",
@@ -181,6 +180,12 @@
 			sec_6.classList.add("setOpa");
 			h_content.classList.remove("setOverflow");
 		}
+
+		// logo.addEventListener("click", toHomepage);
+
+		// function toHomepage(){
+		// 	location.href = "index.html";
+		// }
 	</script>
 
 </body>

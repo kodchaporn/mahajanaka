@@ -8,8 +8,7 @@ function toHomepage(){
 document.getElementById("m_story").onclick = function() {clickStory()};
 
 function clickStory() {
-	clearClick()
-	// caption.innerText = "เรื่องย่อพระราชนิพนธ์พระมหาชนก";
+	clearClick();
 	homepage.classList.add("story");
 	obj.classList.add("obj-s");
 	obj.classList.add("obj-scale");
@@ -17,14 +16,13 @@ function clickStory() {
 	m_story.classList.add("lightGreen");
 	captionText.innerText = "“เรื่องย่อพระราชนิพนธ์พระมหาชนกของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช”";
 	captionText.classList.add("lightGreen");
-	document.getElementById("obj").onclick = function() {window.location.href = "story.html";};
+	clickMe.addEventListener("click", goIntoStory);
 }
 
 document.getElementById("m_history").onclick = function() {clickHistory()};
 
 function clickHistory() {
 	clearClick();
-	// caption.innerText = "ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก และผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช";
 	homepage.classList.add("history");
 	obj.classList.add("obj-h");
 	obj.classList.add("obj-scale");
@@ -32,15 +30,14 @@ function clickHistory() {
 	m_history.classList.add("lightOrange");
 	captionText.classList.add("lightOrange");
 	captionText.innerText = "“ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก และผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช”";
-	document.getElementById("obj").onclick = function() {window.location.href = "history.html";};
+	clickMe.addEventListener("click", goIntoHistory);
 
 }
 
 document.getElementById("m_media").onclick = function() {clickMedia()};
 
 function clickMedia() {
-	clearClick()
-	// caption.innerText = "ผลงานฉบับตีพิมพ์ ผลงานการ์ตูน และ แอนิเมชั่น";
+	clearClick();
 	homepage.classList.add("media");
 	obj.classList.add("obj-m");
 	obj.classList.add("obj-scale");
@@ -48,14 +45,13 @@ function clickMedia() {
 	m_media.classList.add("darkOrange");
 	captionText.classList.add("darkOrange");
 	captionText.innerText = "“ผลงานฉบับตีพิมพ์ ผลงานการ์ตูน และ แอนิเมชั่น”";
-	document.getElementById("obj").onclick = function() {window.location.href = "media.html";};
+	clickMe.addEventListener("click", goIntoMedia);
 }
 
 document.getElementById("m_artist").onclick = function() {clickArtist()};
 
 function clickArtist() {
-	clearClick()
-	// caption.innerText = "คลังภาพรวบรวมศิลปินที่ถวายผลงานภาพประกอบพระราชนิพนธ์พระมหาชนก";
+	clearClick();
 	homepage.classList.add("artist");
 	obj.classList.add("obj-a");
 	obj.classList.add("obj-scale");
@@ -63,7 +59,7 @@ function clickArtist() {
 	m_artist.classList.add("green");
 	captionText.classList.add("green");
 	captionText.innerText = "“คลังภาพรวบรวมศิลปินที่ถวายผลงานภาพประกอบพระราชนิพนธ์พระมหาชนก”";
-	document.getElementById("obj").onclick = function() {window.location.href = "artist.html";};
+	clickMe.addEventListener("click", goIntoArtist);
 }
 
 function clearClick(){
@@ -93,13 +89,26 @@ function clearClick(){
 	captionText.classList.remove("darkOrange");
 }
 
-function myFunction() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-			x.className += " responsive";
-		} else {
-			x.className = "topnav";
-		}
-	}
+// function myFunction() {
+// 		var x = document.getElementById("myTopnav");
+// 		if (x.className === "topnav") {
+// 			x.className += " responsive";
+// 		} else {
+// 			x.className = "topnav";
+// 		}
+// 	}
 
+function goIntoStory(){
+	location.href = "story.html";
+}
+
+function goIntoHistory(){
+	location.href = "history.html";
+}
+function goIntoMedia(){
+	location.href = "media.html";
+}
+function goIntoArtist(){
+	location.href = "artist.html";
+}
 
