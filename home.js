@@ -15,6 +15,8 @@ function clickStory() {
 	obj.classList.add("obj-scale");
 	m_story.classList.add("clickMenu");
 	m_story.classList.add("lightGreen");
+	captionText.innerText = "“เรื่องย่อพระราชนิพนธ์พระมหาชนกของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช”";
+	captionText.classList.add("lightGreen");
 	document.getElementById("obj").onclick = function() {window.location.href = "story.html";};
 }
 
@@ -28,6 +30,8 @@ function clickHistory() {
 	obj.classList.add("obj-scale");
 	m_history.classList.add("clickMenu");
 	m_history.classList.add("lightOrange");
+	captionText.classList.add("lightOrange");
+	captionText.innerText = "“ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก และผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช”";
 	document.getElementById("obj").onclick = function() {window.location.href = "history.html";};
 
 }
@@ -42,6 +46,8 @@ function clickMedia() {
 	obj.classList.add("obj-scale");
 	m_media.classList.add("clickMenu");
 	m_media.classList.add("darkOrange");
+	captionText.classList.add("darkOrange");
+	captionText.innerText = "“ผลงานฉบับตีพิมพ์ ผลงานการ์ตูน และ แอนิเมชั่น”";
 	document.getElementById("obj").onclick = function() {window.location.href = "media.html";};
 }
 
@@ -55,11 +61,13 @@ function clickArtist() {
 	obj.classList.add("obj-scale");
 	m_artist.classList.add("clickMenu");
 	m_artist.classList.add("green");
+	captionText.classList.add("green");
+	captionText.innerText = "“คลังภาพรวบรวมศิลปินที่ถวายผลงานภาพประกอบพระราชนิพนธ์พระมหาชนก”";
 	document.getElementById("obj").onclick = function() {window.location.href = "artist.html";};
 }
 
 function clearClick(){
-	// caption.innerText = "";
+	captionText.innerText = "";
 	obj.classList.remove("obj-scale");
 	homepage.classList.remove("home-1");
 	obj.classList.remove("home-2");
@@ -79,6 +87,10 @@ function clearClick(){
 	obj.classList.remove("obj-s");
 	obj.classList.remove("obj-a");
 	obj.classList.remove("obj-m");
+	captionText.classList.remove("green");
+	captionText.classList.remove("lightGree");
+	captionText.classList.remove("lightOrange");
+	captionText.classList.remove("darkOrange");
 }
 
 function myFunction() {
