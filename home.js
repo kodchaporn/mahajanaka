@@ -9,7 +9,7 @@ document.getElementById("m_story").onclick = function() {clickStory()};
 
 function clickStory() {
 	clearClick()
-	caption.innerText = "เรื่องย่อพระราชนิพนธ์พระมหาชนก";
+	// caption.innerText = "เรื่องย่อพระราชนิพนธ์พระมหาชนก";
 	homepage.classList.add("story");
 	obj.classList.add("obj-s");
 	obj.classList.add("obj-scale");
@@ -22,7 +22,7 @@ document.getElementById("m_history").onclick = function() {clickHistory()};
 
 function clickHistory() {
 	clearClick();
-	caption.innerText = "ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก และผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช";
+	// caption.innerText = "ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก และผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช";
 	homepage.classList.add("history");
 	obj.classList.add("obj-h");
 	obj.classList.add("obj-scale");
@@ -36,7 +36,7 @@ document.getElementById("m_media").onclick = function() {clickMedia()};
 
 function clickMedia() {
 	clearClick()
-	caption.innerText = "ผลงานฉบับตีพิมพ์ ผลงานการ์ตูน และ แอนิเมชั่น";
+	// caption.innerText = "ผลงานฉบับตีพิมพ์ ผลงานการ์ตูน และ แอนิเมชั่น";
 	homepage.classList.add("media");
 	obj.classList.add("obj-m");
 	obj.classList.add("obj-scale");
@@ -49,7 +49,7 @@ document.getElementById("m_artist").onclick = function() {clickArtist()};
 
 function clickArtist() {
 	clearClick()
-	caption.innerText = "คลังภาพรวบรวมศิลปินที่ถวายผลงานภาพประกอบพระราชนิพนธ์พระมหาชนก";
+	// caption.innerText = "คลังภาพรวบรวมศิลปินที่ถวายผลงานภาพประกอบพระราชนิพนธ์พระมหาชนก";
 	homepage.classList.add("artist");
 	obj.classList.add("obj-a");
 	obj.classList.add("obj-scale");
@@ -59,7 +59,7 @@ function clickArtist() {
 }
 
 function clearClick(){
-	caption.innerText = "";
+	// caption.innerText = "";
 	obj.classList.remove("obj-scale");
 	homepage.classList.remove("home-1");
 	obj.classList.remove("home-2");
