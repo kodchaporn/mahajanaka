@@ -409,6 +409,9 @@ a{
 		background-color: white;
 		margin: 0px;
 	}
+	#h_img{
+		width: 100%;
+	}
 
 	.h-content{
 		width: 80%;
@@ -434,23 +437,23 @@ a{
 		position: relative;
 	}
 	#sec_1{
-		height: 70vh;
+		height: 80vh;
 	}
 	#sec_2{
-		height: 70vh;
+		height: 80vh;
 	}
 	#sec_3{
-		height: 55vh;
+		height: 65vh;
 	}
 	#sec_4{
-		height: 90vh;
+		height: 100vh;
 	}
 
 	#sec_5{
-		height: 50vh;
+		height: 60vh;
 	}
 	#sec_6{
-		height: 90vh;
+		height: 100vh;
 	}
 
 	.h-section-2 img{
@@ -461,7 +464,7 @@ a{
 		width: 80%;
 	}
 	.img-left{
-		width: 40%;
+		width: 35%;
     	display: inline-block;
 	}
 }
