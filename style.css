@@ -258,12 +258,25 @@ a{
 	}
 
 	.h-menu{
+		background-color: white;
+		border: 1px #099690;
+		border-radius: 5px;
+		border-style: none solid solid solid;
+		width: 100%;
+		height: 70px;
+		position: fixed;
+		z-index: 4;
+	}
+
+	#h-history{
 		display: none;
 	}
 
 	.h-content{
 		/*width: 80%;*/
 		padding: 20px;
+		top: 100px;
+		position: relative;
 	}
 
 	.h-innerContent{
@@ -307,6 +320,22 @@ a{
 		display: inline-block;
 		width: 100%;
 	}
+	#inner_menu{
+		display: none;
+	}
+	#hamburger{
+		/*background-color: green;*/
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 20px;
+		right: 0px;
+		margin-right: 20px;
+	}
+	.show-menu{
+		display: inline-block !important;
+		background-color: white;
+	}
 }
 /*desktop*/
 @media only screen and (min-width: 770px) {
@@ -317,6 +346,9 @@ a{
 	#menuBar{
 		width: 25%;
 		height: 100vh;
+	}
+	#hamburger{
+		display: none;
 	}
 	#caption{
 		padding: 30px;
@@ -407,15 +439,17 @@ a{
 		padding: 30px;
 		position: fixed;
 		background-color: white;
-		margin: 0px;
+		margin-left: 30px;
 	}
-	#h_img{
-		width: 100%;
+	#h-history{
+		padding-left: 40px;
 	}
 
 	.h-content{
 		width: 80%;
 		padding: 20px;
+		position: relative;
+		top: 100px;
 	}
 
 	.h-innerContent{
@@ -480,8 +514,8 @@ a{
 	display: inline-flex;
 }
 
-.setOpa{
-	opacity: 0;
+.setDisplay{
+	display: none;
 }
 
 .setOverflow{

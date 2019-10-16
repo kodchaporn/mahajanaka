@@ -7,7 +7,7 @@
 	<meta name=description content="">
 	<meta name=viewport content="width=device-width, initial-scale=1">
 
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
@@ -18,10 +18,10 @@
 	</style>
 </head>
 <body>
-	<div class="menu" id="menuBar">
+	<!-- <div class="menu" id="menuBar">
 		<div id="divLogo">
 			<img src="img/home/logo.svg" id="logo" onclick="toHomepage()">
-		</div>
+		</div> -->
 		
 		<!-- <div id="listMenu">
 			<ul>
@@ -31,11 +31,11 @@
 				<li id="m_artist" class="h_menu">ARTIST</li>
 			</ul>
 		</div> -->
-		<div id="clickMe"></div>
+		<!-- <div id="clickMe"></div>
 		<div id="caption">
 			<p id="captionText"></p>
-		</div>
-	</div>
+		</div> -->
+	<!-- </div> -->
 
 	<div id="warp">
 
@@ -44,13 +44,21 @@
 		</div>
 
 		<div class="h-menu" id="h_menu">
-			<a href="index.html"><h2 class="darkOrange">พระมหาชนก</h2></a>
-			<h1 class="darkGreen">HISTORY</h1>
-			<ul class="innerMenu darkGreen Srinakharinwirot">
+			<div id="divLogo">
+				<img src="img/home/logo.svg" id="logo" onclick="toHomepage()">
+			</div>
+			<div id="hamburger">
+				<a class="icon" onclick="navbar()">
+					<i class="fa fa-bars green" style="font-size:35px;"></i>
+				</a>
+			</div>
+			<h1 class="darkGreen Winter" id="h-history">HISTORY</h1>
+			<ul class="innerMenu darkGreen Srinakharinwirot" id="inner_menu">
 				<li id="h_menu1" class="lightOrange clickMenu">ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช</li><br>
 				<li id="h_menu2">ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก</li>
 			</ul>
-			<i class="fas fa-chevron-circle-left lightGreen" id="left-arrow"></i>
+			
+			<!-- <i class="fas fa-chevron-circle-left lightGreen" id="left-arrow"></i> -->
 		</div>
 		
 		<div class="h-content setOverflow" id="h_content">
@@ -174,12 +182,12 @@
 			h_img.src = "img/history/KingRe.jpg";
 			h_innerHead.innerText = "ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช";
 			h_innerContent_sec1.innerHTML = content[0].i + '<br><br>' + content[0].ii;
-			sec_2.classList.remove("setOpa");
-			sec_3.classList.remove("setOpa");
-			sec_4.classList.remove("setOpa");
-			sec_5.classList.remove("setOpa");
-			sec_6.classList.remove("setOpa");
-			h_content.classList.add("setOverflow");
+			sec_2.classList.remove("setDisplay");
+			sec_3.classList.remove("setDisplay");
+			sec_4.classList.remove("setDisplay");
+			sec_5.classList.remove("setDisplay");
+			sec_6.classList.remove("setDisplay");
+			inner_menu.classList.remove("show-menu");
 		}
 		
 		function clickContent2(){
@@ -190,17 +198,17 @@
 			h_innerHead.innerText = "ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก";
 			h_innerContent_sec1.innerText = content[1].i;
 			h_img.src = "img/history/img001Re.jpg";
-			sec_2.classList.add("setOpa");
-			sec_3.classList.add("setOpa");
-			sec_4.classList.add("setOpa");
-			sec_5.classList.add("setOpa");
-			sec_6.classList.add("setOpa");
-			if (chkHeight < 750) {
-				h_content.classList.add("setOverflow");
-			}else{
-				h_content.classList.remove("setOverflow");
-			}
+			sec_2.classList.add("setDisplay");
+			sec_3.classList.add("setDisplay");
+			sec_4.classList.add("setDisplay");
+			sec_5.classList.add("setDisplay");
+			sec_6.classList.add("setDisplay");
+			inner_menu.classList.remove("show-menu");
 			
+		}
+
+		function navbar(){
+			inner_menu.classList.toggle("show-menu");
 		}
 	</script>
 
