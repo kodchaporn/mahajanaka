@@ -57,7 +57,7 @@
 			<h1 class="lightOrange Srinakharinwirot" id="h_innerHead" style="letter-spacing: 2px;">ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช</h1>
 			<div class="h-section-1" id="sec_1">
 				<div class="img-left">
-					<img src="img/history/KingRe.jpg" id="h_imgContent">
+					<img src="img/history/KingRe.jpg" class="h_imgContent" id="h_img">
 				</div>
 				
 				
@@ -68,7 +68,7 @@
 					</p>
 				</div>
 			</div>
-			<div class="h-section-2" id="sec_2">				
+			<div class="h-section-2" id="sec_2">
 				<div class="h-innerContent">
 					<p class="darkGreen baiJamjuree" id="h_innerContent">
 						<strong>“พระราชานุกิจรัชกาลที่8”</strong><br>
@@ -79,13 +79,16 @@
 						พิมพ์ครั้งแรกในหนังสือรายเดือน วงวรรณคดี ฉบับประจำเดือนสิงหาคม พ.ศ.2490 เป็นบันทึกพระราชนิพนธ์ขึ้นในช่วงเวลาเสด็จพระราชดำเนินเพื่อกลับไปศึกษาต่อประเทศสวิตเซอร์แลนด์ เมื่อวันที่ 19 สิงหาคม พ.ศ.2489 หลังจากที่ พระองค์เสด็จขึ้นครองราชย์ เมื่อวันที่ 9 มิถุนายน พ.ศ.2489 โดยทรงบันทึกเป็นเรื่องราวการเดินทาง แสดงถึงความรู้สึกของพระองค์ที่ห่วงใยพสกนิกรอย่างยิ่ง รวมถึงเหตุการณ์ที่ทรงพบเจอ
 					</p>
 				</div>
-				<div class="img-left">
-					<img src="img/history/book1Re.jpg" id="h-imgContent">
+				<div class="img-right">
+					<img src="img/history/book1Re.jpg" class="h_imgContent">
 				</div>
 				
 			</div>
 			<div class="h-section-1" id="sec_3">
-				<img src="img/history/book2.jpg" id="h-imgContent">
+				<div class="img-left">
+					<img src="img/history/book2.jpg" class="h_imgContent">
+				</div>
+				
 				<div class="h-innerContent">
 					<p class="darkGreen baiJamjuree" id="h_innerContent">
 						<strong>“นายอินทร์ผู้ปิดทองหลังพระ”</strong><br>
@@ -108,10 +111,16 @@
 						พระราชนิพนธ์เล่มนี้เป็นภาษาไทยและภาษาอังกฤษในเล่มเดียวกัน และเป็นหนังสือพระราชนิพนธ์ที่ติดอันดับขายดีที่สุดของประเทศในปี พ.ศ.2545 เนื้อหาหลักเป็นเรื่องความกตัญญูรู้คุณของคุณทองแดง สุนัขทรงเลี้ยง รวมถึงความจงรักภักดี ความมีมารยาท และการสั่งสอนลูกของคุณทองแดง และในพระราชนิพนธ์ได้ทรงยกย่องคุณทองแดงที่มีต่อแม่มะลิ ‘ผิดกับคนอื่นที่เมื่อกลายมาเป็นคนสำคัญแล้วมักจะลืมตัว และดูหมิ่นผู้มีพระคุณซึ่งเป็นคนต่ำต้อย’ อันเป็นประโยชน์ต่อการดำรงชีวิต
 					</p>
 				</div>
-				<img src="img/history/book3Re.jpg" id="h-imgContent">
+				<div class="img-right">
+					<img src="img/history/book3Re.jpg" class="h_imgContent">
+				</div>
+				
 			</div>
 			<div class="h-section-1" id="sec_5">
-				<img src="img/history/book4Re.jpg" id="h-imgContent">
+				<div class="img-left">
+					<img src="img/history/book4Re.jpg" class="h_imgContent">
+				</div>
+				
 				<div class="h-innerContent">
 					<p class="darkGreen baiJamjuree" id="h_innerContent">
 						<strong>“พระราชดำรัส”</strong><br>
@@ -162,7 +171,7 @@
 			h_menu2.classList.remove("clickMenu");
 			h_menu1.classList.add("lightOrange");
 			h_menu1.classList.add("clickMenu");
-			h_imgContent.src = "img/history/KingRe.jpg"
+			h_img.src = "img/history/KingRe.jpg";
 			h_innerHead.innerText = "ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช";
 			h_innerContent_sec1.innerHTML = content[0].i + '<br><br>' + content[0].ii;
 			sec_2.classList.remove("setOpa");
@@ -180,7 +189,7 @@
 			h_menu2.classList.add("clickMenu");
 			h_innerHead.innerText = "ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก";
 			h_innerContent_sec1.innerText = content[1].i;
-			h_imgContent.src = "img/history/img001Re.jpg"
+			h_img.src = "img/history/img001Re.jpg";
 			sec_2.classList.add("setOpa");
 			sec_3.classList.add("setOpa");
 			sec_4.classList.add("setOpa");
@@ -188,20 +197,11 @@
 			sec_6.classList.add("setOpa");
 			if (chkHeight < 750) {
 				h_content.classList.add("setOverflow");
-				console.log(chkHeight < 758);
-				console.log(chkHeight);
 			}else{
 				h_content.classList.remove("setOverflow");
-				console.log(chkHeight)
 			}
 			
 		}
-
-		// logo.addEventListener("click", toHomepage);
-
-		// function toHomepage(){
-		// 	location.href = "index.html";
-		// }
 	</script>
 
 </body>
