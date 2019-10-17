@@ -133,6 +133,34 @@
 			</div>
 			
 		</div>
+
+		<div class="h-content setDisplay" id="a_content4">			
+			
+			<div class="h-section-1" id="sec_1">
+
+				<div class="a-img">
+					<img src="img/artist/4/a.jpg" class="h_imgContent" id="h_img">
+				</div>
+
+				<div class="artistName">
+					<p class="green Srinakharinwirot header" id="a_firstname">พิชัย</p>
+					<p class="green Srinakharinwirot header" id="a_lastname">นิรันต์</p>
+				</div>
+				
+				
+				<div class="a-innerContent">
+					<p class="darkGreen baiJamjuree" id="h_innerContent_sec1">
+						นายพิชัย นิรันต์ เกิด ๗ กุมภาพันธ์ พ.ศ.๒๕๗๙ ได้รับการยกย่องเชิดชูเกียรติเป็นศิลปินแห่งชาติ สาขาทัศนศิลป์ (จิตรกรรม) ประจำปีพ.ศ.๒๕๔๖
+					</p>
+				</div>
+
+				<div class="a-work">
+					<img src="img/artist/4/1.jpg">
+					<img src="img/artist/4/2.jpg">
+				</div>
+			</div>
+			
+		</div>
 		
 	</div>
 
@@ -192,6 +220,12 @@
 			h_menu1.classList.add("green");
 			h_menu1.classList.add("clickMenu");			
 			a_content2.classList.add("setDisplay");
+			a_content3.classList.add("setDisplay");
+			a_content4.classList.add("setDisplay");
+			// a_content5.classList.add("setDisplay");
+			// a_content6.classList.add("setDisplay");
+			// a_content7.classList.add("setDisplay");
+			// a_content8.classList.add("setDisplay");
 		}
 		
 		function clickContent2(){
@@ -199,9 +233,9 @@
 			a_content2.classList.remove("setDisplay");
 			h_menu2.classList.add("green");
 			h_menu2.classList.add("clickMenu");
-			a_content1.classList.add("setDisplay");
-			
+			a_content1.classList.add("setDisplay");			
 			a_content3.classList.add("setDisplay");
+			a_content4.classList.add("setDisplay");
 		}
 
 		function clickContent3(){
@@ -211,13 +245,18 @@
 			h_menu3.classList.add("clickMenu");			
 			a_content1.classList.add("setDisplay");
 			a_content2.classList.add("setDisplay");
+			a_content4.classList.add("setDisplay");
 
 		}
 
 		function clickContent4(){
 			clearClick();
+			a_content4.classList.remove("setDisplay");
 			h_menu4.classList.add("green");
 			h_menu4.classList.add("clickMenu");
+			a_content1.classList.add("setDisplay");
+			a_content2.classList.add("setDisplay");
+			a_content3.classList.add("setDisplay");
 		}
 
 		function clickContent5(){
