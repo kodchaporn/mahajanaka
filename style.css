@@ -15,7 +15,7 @@ h2{
 }
 
 p{
-	font-size: 1.2em;
+	font-size: 1em;
 	font-family: BaiJamjuree;
 }
 
@@ -275,7 +275,7 @@ a{
 	.h-content{
 		/*width: 80%;*/
 		padding: 20px;
-		top: 100px;
+		top: 55px;
 		position: relative;
 	}
 
@@ -284,7 +284,7 @@ a{
 		padding-right: 40px;
 		display: inline-block;
 		line-height: 1.7;
-		background-color: yellow;
+		/*background-color: yellow;*/
 	}
 
 	.h-section-1{
@@ -310,13 +310,13 @@ a{
 		width: 100%;
 	}
 	.img-left{
-		background-color: purple;
+		/*background-color: purple;*/
 		width: 100%;
 		height: 200px;
 		display: inline-block;
 	}
 	.img-right{
-		background-color: red;
+		/*background-color: red;*/
 		display: inline-block;
 		width: 100%;
 	}
@@ -335,6 +335,12 @@ a{
 	.show-menu{
 		display: inline-block !important;
 		background-color: white;
+	}
+	#backHome{
+		display: none;
+	}
+	#sec_6{
+		margin-bottom: 50px;
 	}
 }
 /*desktop*/
@@ -448,8 +454,8 @@ a{
 	.h-content{
 		width: 80%;
 		padding: 20px;
-		position: relative;
-		top: 100px;
+		/*position: relative;*/
+		/*top: 100px;*/
 	}
 
 	.h-innerContent{
@@ -471,23 +477,23 @@ a{
 		position: relative;
 	}
 	#sec_1{
-		height: 80vh;
+		height: 55vh;
 	}
 	#sec_2{
-		height: 80vh;
+		height: 60vh;
 	}
 	#sec_3{
-		height: 65vh;
+		height: 55vh;
 	}
 	#sec_4{
-		height: 100vh;
+		height: 80vh;
 	}
 
 	#sec_5{
-		height: 60vh;
+		height: 50vh;
 	}
 	#sec_6{
-		height: 100vh;
+		height: 80vh;
 	}
 
 	.h-section-2 img{
@@ -500,6 +506,10 @@ a{
 	.img-left{
 		width: 35%;
     	display: inline-block;
+	}
+	#backHome{
+		padding-left: 50px;
+		padding-top: 20px;
 	}
 }
 
@@ -572,7 +582,7 @@ a{
 }
 
 .innerMenu li{
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 /*.menu{

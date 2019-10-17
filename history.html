@@ -18,25 +18,6 @@
 	</style>
 </head>
 <body>
-	<!-- <div class="menu" id="menuBar">
-		<div id="divLogo">
-			<img src="img/home/logo.svg" id="logo" onclick="toHomepage()">
-		</div> -->
-		
-		<!-- <div id="listMenu">
-			<ul>
-				<li id="m_story" class="h_menu">STORY</li>
-				<li id="m_history" class="h_menu">HISTORY</li>
-				<li id="m_media" class="h_menu">MEDIA</li>
-				<li id="m_artist" class="h_menu">ARTIST</li>
-			</ul>
-		</div> -->
-		<!-- <div id="clickMe"></div>
-		<div id="caption">
-			<p id="captionText"></p>
-		</div> -->
-	<!-- </div> -->
-
 	<div id="warp">
 
 		<div class="h-left" id="h_left">
@@ -57,8 +38,10 @@
 				<li id="h_menu1" class="lightOrange clickMenu">ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช</li><br>
 				<li id="h_menu2">ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก</li>
 			</ul>
+			<div id="backHome">
+				<i class="fa fa-chevron-circle-left lightGreen" style="font-size:48px"></i>
+			</div>			
 			
-			<!-- <i class="fas fa-chevron-circle-left lightGreen" id="left-arrow"></i> -->
 		</div>
 		
 		<div class="h-content setOverflow" id="h_content">
@@ -209,6 +192,10 @@
 
 		function navbar(){
 			inner_menu.classList.toggle("show-menu");
+		}
+
+		function toHomepage(){
+			location.href = "index.html";
 		}
 	</script>
 
