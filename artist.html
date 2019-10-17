@@ -51,8 +51,7 @@
 			
 		</div>
 		
-		<div class="h-content setOverflow" id="h_content">
-			
+		<div class="h-content" id="a_content1">			
 			
 			<div class="h-section-1" id="sec_1">
 
@@ -74,6 +73,62 @@
 
 				<div class="a-work">
 					<img src="img/artist/1/work.jpg">
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="h-content setDisplay" id="a_content2">			
+			
+			<div class="h-section-1" id="sec_1">
+
+				<div class="a-img">
+					<img src="img/artist/2/re.jpg" class="h_imgContent" id="h_img">
+				</div>
+
+				<div class="artistName">
+					<p class="green Srinakharinwirot header" id="a_firstname">ประหยัด</p>
+					<p class="green Srinakharinwirot header" id="a_lastname">พงษ์ดำ</p>
+				</div>
+				
+				
+				<div class="a-innerContent">
+					<p class="darkGreen baiJamjuree" id="h_innerContent_sec1">
+						ศาสตราจารย์เกียรติคุณประหยัด พงษ์ดำ เกิด ๒๘ ตุลาคม พ.ศ.๒๔๗๗ และ เสียชีวิต ๑๙ กันยายน พ.ศ.๒๕๕๗ ศิลปินแห่งชาติ สาขาทัศนศิลป์(ภาพพิมพ์) ประจำปีพ.ศ.๒๔๔๑, อดีตคณบดี คณะจิตรกรรม ประติมากรรม และภาพพิมพ์ มหาวิทยาลัยศิลปากร
+					</p>
+				</div>
+
+				<div class="a-work">
+					<img src="img/artist/2/work1.jpg">
+					<img src="img/artist/2/work2.jpg">
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="h-content setDisplay" id="a_content3">			
+			
+			<div class="h-section-1" id="sec_1">
+
+				<div class="a-img">
+					<img src="img/artist/3/re.jpg" class="h_imgContent" id="h_img">
+				</div>
+
+				<div class="artistName">
+					<p class="green Srinakharinwirot header" id="a_firstname">ปรีชา</p>
+					<p class="green Srinakharinwirot header" id="a_lastname">เถาทอง</p>
+				</div>
+				
+				
+				<div class="a-innerContent">
+					<p class="darkGreen baiJamjuree" id="h_innerContent_sec1">
+						ศาสตราจารย์ปรีชา เถาทอง  เกิด ๒๗ เมษายน พ.ศ.๒๔๙๑  ได้รับการเชิดชูเกียรติในฐานะศิลปินแห่งชาติ สาขาทัศนศิลป์ สาขาย่อยการ(จิตรกรรม) ประจำปีพ.ศ.๒๕๕๒ จบการศึกษาระดับปริญญาตรี ศิลปบัณฑิต จิตรกรรม (เกียรตินิยมอันดับ ๒) มหาวิทยาลัยศิลปากร กรุงเทพมหานคร ได้รับทุนไป ศึกษาที่ L'Accademia di belle Arte ณ กรุงโรม ประเทศอิตาลี ในปี พ.ศ.๒๕๑๙ และ จบการศึกษาระดับปริญญาโท ศิลปมหาบัณฑิต จิตรกรรม มหาวิทยาลัยศิลปากร กรุงเทพมหานคร
+					</p>
+				</div>
+
+				<div class="a-work">
+					<img src="img/artist/3/1.jpg">
+					<img src="img/artist/3/2.jpg">
 				</div>
 			</div>
 			
@@ -133,20 +188,30 @@
 		
 		function clickContent1(){
 			clearClick();
+			a_content1.classList.remove("setDisplay");
 			h_menu1.classList.add("green");
-			h_menu1.classList.add("clickMenu");
+			h_menu1.classList.add("clickMenu");			
+			a_content2.classList.add("setDisplay");
 		}
 		
 		function clickContent2(){
 			clearClick();
+			a_content2.classList.remove("setDisplay");
 			h_menu2.classList.add("green");
 			h_menu2.classList.add("clickMenu");
+			a_content1.classList.add("setDisplay");
+			
+			a_content3.classList.add("setDisplay");
 		}
 
 		function clickContent3(){
 			clearClick();
+			a_content3.classList.remove("setDisplay");
 			h_menu3.classList.add("green");
-			h_menu3.classList.add("clickMenu");
+			h_menu3.classList.add("clickMenu");			
+			a_content1.classList.add("setDisplay");
+			a_content2.classList.add("setDisplay");
+
 		}
 
 		function clickContent4(){
