@@ -4,10 +4,10 @@ body{
 	overflow: hidden;
 }
 
-h1{
+/*h1{
 	font-family: Chonburi !important;
-	font-size: 2em;
-}
+	font-size: 2.7em;
+}*/
 
 h2{
 	margin: 0;
@@ -68,6 +68,12 @@ a{
 
 .Winter{
 	font-family: Winter !important;
+}
+
+.header{
+	font-size: 2.7em;
+	margin: 5px;
+    line-height: 1.2;
 }
 
 @keyframes obj-scl{
@@ -335,6 +341,7 @@ a{
 	.show-menu{
 		display: inline-block !important;
 		background-color: white;
+		width: 100%;
 	}
 	#backHome{
 		display: none;
@@ -449,11 +456,14 @@ a{
 	}
 	#h-history{
 		padding-left: 40px;
+		left: 30px;
+		position: relative;
 	}
 
 	.h-content{
 		width: 80%;
 		padding: 20px;
+		margin-top: 45px;
 		/*position: relative;*/
 		/*top: 100px;*/
 	}
@@ -510,6 +520,34 @@ a{
 	#backHome{
 		padding-left: 50px;
 		padding-top: 20px;
+		position: relative;
+		left: 30px;
+	}
+	.artistName{
+		/*background-color: red;*/
+		width: 50%;
+		position: absolute;
+		top: 0%;
+		left: 25%;
+		line-height: 0.5;
+	}
+	.a-innerContent{
+		width: 65%;
+		top: 130px;
+		padding-right: 40px;
+		display: inline-block;
+		position: absolute;
+		line-height: 1.7;
+	}
+	.a-img{
+		width: 25%;
+		display: inline-block;
+	}
+	.a-work{
+		/*background-color: black;*/
+		position: relative;
+    	top: 20%;
+    	width: 100%;
 	}
 }
 
@@ -531,54 +569,10 @@ a{
 .setOverflow{
 	overflow: auto !important;
 }
-
-.a_menu{
-	font-size: 1.5em;
-	line-height: 1.5;
-	width: 25%;
-	margin: 0;
-}
-
-.artistImg01{
-	background-image: url(img/artist/001Re.jpg);
-}
-
-#c_art{
-		/*background: rgba(4, 255, 255, 0.7);*/
-		padding: 50px;
-		width: 70%;
-		box-sizing: border-box;
-		/*display: flex;*/
-		height: 100vh;
-		position: absolute;
-		top: 0%;
-		z-index: -2;
-		font-size: 1.7em;
-	}
-
-	#artistImg{
-		/*background-color: red;*/
-		width: 100%;
-		height: 60%;
-		background-repeat: no-repeat;
-	}
-
-	.artistName{
-		position: absolute;
-		left: 25%;
-	}
-
-	.port{
-		/*background-color: pink;*/
-		width: 60%;
-		height: 25%;
-		left: 25%;
-		position: absolute;
-		top: 20%;
-	}
-
-	.innerMenu{
+.innerMenu{
 	line-height: 2;
+	left: 30px;
+    position: relative;
 }
 
 .innerMenu li{
