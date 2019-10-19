@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	font-family: Winter !important;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 h1{
@@ -349,6 +349,26 @@ a{
 	#sec_6{
 		margin-bottom: 50px;
 	}
+	.a-section-1{
+		padding: 10px;
+		position: absolute;
+		display: inline-box;
+	}
+	.a-img{
+		width: 100%;
+	}
+	.a-innerContent{
+		width: 45%;
+	}
+	#a_img{
+		width: 40%;
+	}
+	.a-content{
+		width: 100%;
+    	padding: 20px;
+    	top: 55px;
+    	position: relative;
+	}
 }
 /*desktop*/
 @media only screen and (min-width: 770px) {
@@ -548,6 +568,10 @@ a{
 		position: relative;
     	top: 20%;
     	width: 100%;
+	}
+	.a-section-1{
+		padding: 10px;
+		position: relative;
 	}
 }
 
