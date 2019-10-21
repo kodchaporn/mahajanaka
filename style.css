@@ -334,7 +334,7 @@ a{
 	.show-menu{
 		display: inline-block !important;
 		background-color: white;
-		/*width: 100%;*/
+		width: 100%;
 	}
 	#backHome{
 		display: none;
@@ -528,7 +528,7 @@ a{
 	}
 
 	.full{
-		width: 80%;
+		width: 90%;
 	}
 	.img-left{
 		/*width: 35%;*/
