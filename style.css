@@ -19,10 +19,6 @@ p{
 	font-family: BaiJamjuree;
 }
 
-img{
-	cursor: pointer;
-}
-
 li{
 	list-style-type: none;
 	cursor: pointer;
@@ -358,7 +354,7 @@ a{
 		width: 100%;
 	}
 	.a-innerContent{
-		width: 45%;
+		width: 100%;
 	}
 	#a_img{
 		width: 40%;
@@ -368,6 +364,9 @@ a{
     	padding: 20px;
     	top: 55px;
     	position: relative;
+	}
+	.mobile-width{
+		width: 80%;
 	}
 }
 /*desktop*/
@@ -411,6 +410,7 @@ a{
 		position: absolute;
 		z-index: -1;
 		background-size: cover;
+		overflow: hidden;
 	}
 	.home-2{
 		background-image: url(img/home/obj-home.png);
@@ -552,12 +552,12 @@ a{
 		line-height: 0.5;
 	}
 	.a-innerContent{
-		width: 65%;
+		/*width: 65%;
 		top: 130px;
 		padding-right: 40px;
 		display: inline-block;
 		position: absolute;
-		line-height: 1.7;
+		line-height: 1.7;*/
 	}
 	.a-img{
 		width: 25%;
@@ -565,13 +565,34 @@ a{
 	}
 	.a-work{
 		/*background-color: black;*/
-		position: relative;
-    	top: 20%;
+		position: absolute;
+    	top: 280px;
     	width: 100%;
+    	padding-top: 30px;
 	}
 	.a-section-1{
 		padding: 10px;
 		position: relative;
+	}
+	.a-img{
+		width:40%;
+	}
+	.a-innerContent{
+		width: 70%;
+		top: 125px;
+		left: 26%;
+		padding-right: 40px;
+		display: inline-block;
+		position: absolute;
+	}
+	#a_img{
+		width: 40%;
+	}
+	.a-content{
+		width: 100%;
+    	padding: 20px;
+    	top: 55px;
+    	position: relative;
 	}
 }
 
