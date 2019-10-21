@@ -422,7 +422,7 @@ a{
 		background-image: url(img/home/obj-s.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: obj-scl .5s infinite alternate ;
+		animation: obj-scl 1s infinite alternate ;
 		transition: all .5s;
 		background-size: cover;
 	}
@@ -431,7 +431,7 @@ a{
 		background-image: url(img/home/obj-h.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: obj-scl .5s infinite alternate ;
+		animation: obj-scl 1s infinite alternate ;
 		transition: all .5s;
 		background-size: cover;
 	}
@@ -440,7 +440,7 @@ a{
 		background-image: url(img/home/obj-m.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: obj-scl .5s infinite alternate ;
+		animation: obj-scl 1s infinite alternate ;
 		transition: all .5s;
 		background-size: cover;
 	}
@@ -449,7 +449,7 @@ a{
 		background-image: url(img/home/obj-a.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: obj-scl .5s infinite alternate ;
+		animation: obj-scl 1s infinite alternate ;
 		transition: all .5s;
 		background-size: cover;
 
