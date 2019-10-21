@@ -160,7 +160,7 @@ a{
 	height: 100vh;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 812px) {
 	#divLogo{
 		/*background-color: white;*/
 		width: 70px;
@@ -308,9 +308,6 @@ a{
 		float: right;
 	}
 
-	.full{
-		width: 100%;
-	}
 	.img-left{
 		/*background-color: purple;*/
 		width: 100%;
@@ -337,7 +334,7 @@ a{
 	.show-menu{
 		display: inline-block !important;
 		background-color: white;
-		width: 100%;
+		/*width: 100%;*/
 	}
 	#backHome{
 		display: none;
@@ -370,7 +367,7 @@ a{
 	}
 }
 /*desktop*/
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 813px) {
 	#divLogo{
 		padding-left: 50px;
 		padding-top: 50px;
@@ -458,7 +455,7 @@ a{
 
 	}
 	.h-left{
-		width: 30%;
+		width: 40%;
 		height: 100vh;
 		padding: 30px;
 		position: relative;
@@ -481,7 +478,7 @@ a{
 	}
 
 	.h-content{
-		width: 80%;
+		/*width: 80%;*/
 		padding: 20px;
 		margin-top: 45px;
 		/*position: relative;*/
@@ -534,7 +531,7 @@ a{
 		width: 80%;
 	}
 	.img-left{
-		width: 35%;
+		/*width: 35%;*/
     	display: inline-block;
 	}
 	#backHome{
@@ -610,10 +607,10 @@ a{
 .setDisplay{
 	display: none;
 }
-
+/*
 .setOverflow{
 	overflow: auto !important;
-}
+}*/
 .innerMenu{
 	line-height: 2;
 	left: 30px;
@@ -622,6 +619,7 @@ a{
 
 .innerMenu li{
 	font-size: 1.3em;
+	padding-right: 40px;
 }
 
 /*.menu{
