@@ -12,7 +12,7 @@
 </head>
 <body>
 
-	<div class="menu" id="menuBar">
+	<!-- <div class="menu" id="menuBar">
 		<div id="divLogo">
 			<img src="img/home/logo.svg" id="logo" onclick="toHomepage()">
 		</div>
@@ -30,28 +30,39 @@
 		<div id="caption">
 			<p id="captionText"></p>
 		</div>
+	</div> -->
+
+	<div class="h-menu" id="h_menu">
+		<div id="divLogo">
+			<img src="img/home/logo.svg" id="logo" onclick="toHomepage()">
+		</div>
+		<div id="hamburger">
+			<a class="icon" onclick="navbar()">
+				<i class="fa fa-bars green" style="font-size:35px;"></i>
+			</a>
+		</div>
+		<div id="listMenu">
+			<ul class="innerMenu darkGreen Winter">
+				<li id="m_story" class="h_menu" style="font-size: 2.7em;">STORY</li>
+				<li id="m_history" class="h_menu" style="font-size: 2.7em;">HISTORY</li>
+				<li id="m_media" class="h_menu" style="font-size: 2.7em;">MEDIA</li>
+				<li id="m_artist" class="h_menu" style="font-size: 2.7em;">ARTIST</li>
+			</ul>
+		</div>
+		<div id="caption">
+			<p id="captionText"></p>
+		</div>
 	</div>
+	<div id="clickMe"></div>
 
 	<div id="homepage" class="home-1">
-		
-		<div id="obj">
 			
-		</div>	
+			<div id="obj">
+				
+			</div>	
 
-	</div>
-	
+		</div>
 	<script type="text/javascript" src="home.js"></script>
-
-	<!-- <script type="text/javascript">
-		function myFunction() {
-			var x = document.getElementById("menuBar");
-			if (x.className === "menuv") {
-				x.className += " responsive";
-			} else {
-				x.className = "menu";
-			}
-		}
-	</script> -->
 
 </body>
 </html>

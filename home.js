@@ -89,15 +89,6 @@ function clearClick(){
 	captionText.classList.remove("darkOrange");
 }
 
-// function myFunction() {
-// 		var x = document.getElementById("myTopnav");
-// 		if (x.className === "topnav") {
-// 			x.className += " responsive";
-// 		} else {
-// 			x.className = "topnav";
-// 		}
-// 	}
-
 function goIntoStory(){
 	location.href = "story.html";
 }

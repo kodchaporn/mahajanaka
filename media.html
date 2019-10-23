@@ -2,8 +2,173 @@
 <html>
 <head>
 	<title>Media</title>
+
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style type="text/css">
+		@media only screen and (min-width: 770px) {
+			#menuBar{display: none;}
+		}
+	</style>
 </head>
 <body>
+	<div class="h-menu setBgWhite" id="h_menu">
+		<div id="divLogo">
+			<img src="img/home/logo.svg" id="logo" onclick="toHomepage()">
+		</div>
+		<div id="hamburger">
+			<a class="icon" onclick="navbar()">
+				<i class="fa fa-bars green" style="font-size:35px;"></i>
+			</a>
+		</div>
+		<h1 class="darkOrange Winter" id="h-history">MEDIA</h1>
+		<ul class="innerMenu darkGreen Srinakharinwirot" id="inner_menu">
+			<li id="h_menu1" class="darkOrange clickMenu">พระมหาชนกฉบับตีพิมพ์</li><br>
+			<li id="h_menu2">หนังสือการ์ตูนพระมหาชนก</li><br>
+			<li id="h_menu3">แอนิเมชั่นพระมหาชนก</li>
+		</ul>
+		<div id="backHome">
+			<a href="index.html"><i class="fa fa-chevron-circle-left lightGreen" style="font-size:48px"></i></a>
+			
+		</div>			
+		
+	</div>
+	
+	<div class="h-content" id="m_content1">
+		<p class="darkOrange Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">พระมหาชนกฉบับตีพิมพ์</p>
+		<div class="h-section-1" id="sec_1">
+			<div class="img-left">
+				<img src="img/media/book1.jpg" class="h_imgContent" id="h_img">
+			</div>
+			
+			
+			<div class="h-innerContent">
+				<p class="darkGreen baiJamjuree" id="h_innerContent_sec1">
+					"พระมหาชนก" พระราชนิพนธ์ในพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช ได้พิมพ์เผยแพร่เป็นฉบับปกแข็งขนาด ๑๑ x ๑๑ นิ้ว บรรจุกล่องสวยงาม นอกจากเนื้อหาทรงคุณค่าแล้วยังมีภาพวาดประกอบของจิตรกรชื่อดัง ๘ คน คือ เฉลิมชัย โฆษิตพิพัฒน์, ประหยัด พงษ์ดำ, ปรีชา เถาทอง, พิชัย นิรันต์, เนติกร ชินโย, จินตนา เปี่ยมศิริ, ปัญญา วิจินธนสาร และธีระวัฒน์ คะนะมะ ผลงานจิตรกรระดับชาติถูกตีพิมพ์เป็นภาพประกอบเนื้อหา
+				</p>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="h-content setDisplay" id="m_content2">
+		<p class="darkOrange Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">หนังสือการ์ตูนพระมหาชนก</p>
+		<div class="h-section-1" id="sec_1">
+			<div class="img-left">
+				<img src="img/media/book2.jpg" class="h_imgContent" id="h_img">
+			</div>
+			
+			
+			<div class="h-innerContent">
+				<p class="darkGreen baiJamjuree" id="h_innerContent_sec1">
+					ปีพ.ศ.๒๕๔๒ พระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช ทรงพระกรุณาโปรดเกล้าให้จัดพิมพ์พระราชนิพนธ์ เรื่องพระมหาชนกอีกครั้ง ในรูปแบบของการ์ตูนโดยมีชัย ราชวัตร เป็นผู้วาดภาพประกอบ ในสำนักพิมพ์อมรินทร์
+				</p>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="h-content setDisplay" id="m_content3">
+		<p class="darkOrange Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">แอนิเมชั่นพระมหาชนก</p>
+		<iframe width="90%" height="500" src="https://www.youtube.com/embed/XMBPsnacYWI?autoplay=1" frameborder="0" allowfullscreen></iframe>
+		<!-- allow="autoplay" -->
+		<div class="h-section-1" id="sec_1">
+			<div class="img-left">
+				<img src="img/media/book3.jpg" class="h_imgContent" id="h_img">
+			</div>			
+			<div class="h-innerContent">
+				<p class="darkGreen baiJamjuree" id="h_innerContent_sec1">
+					ภาพยนตร์แอนิเมชั่น ๓ มิติ ฝีมือคนไทย "พระมหาชนก" ในพระบาทสมเด็จพระเจ้าอยู่หัวรัชกาลที่ ๙ ที่ใช้เวลาในการทำนานถึง ๔ ปี โดยมีบริษัทผู้ผลิตแอนิเมชั่นเข้าร่วมกว่า ๑๕ ราย และได้ศิลปิน นักวาด นักพัฒนาภาพเคลื่อนไหว ผู้ชำนาญการด้านแสงและเงา ผู้ชำนาญการด้านแอนิเมชั่น กว่า ๒๕๐ คน มาช่วยกันสร้างสรรค์ภาพยนตร์เรื่องนี้
+					<br><br><strong>โดยเนื้อเรื่องแบ่งออกเป็น ๓ องก์</strong><br>
+					องก์ที่ ๑ กำเนิด<br>
+					องก์ที่ ๒ ความเพียร<br>
+					องก์ที่ ๓ ปัญญา
+				</p>
+			</div>
+		</div>
+
+		<div class="h-section-1" id="sec_1">
+			<div class="img-left">
+				<img src="img/media/book4.jpg" class="h_imgContent" id="h_img">
+			</div>			
+			<div class="h-innerContent">
+				<p class="darkGreen baiJamjuree" id="h_innerContent_sec1">
+					<strong>ทีมพากย์เสียงในภาพยนตร์</strong><br>
+					สุเชาว์   พงษ์วิไล  พากษ์เสียงพระเจ้ามหาชนก (องค์ปู่)<br>
+					นนทรีย์  นิมิบุตร  พากษ์เสียงพระอริฏฐชนก<br>
+					ฉัตรชัย  เปล่งพานิช  พากษ์เสียงพระโปลชนก<br>
+					สินจัย  เปล่งพานิช  พากษ์เสียงพระเทวี<br>
+					อรรถพร  ธีมากร  พากษ์เสียงพระมหาชนก<br>
+					ณมญชุ์  พงษ์วิไล  พากษ์เสียงพระสิวลีเทวี<br>
+					คมสัน  นันทจิต  พากษ์เสียงรโหปฐกะ<br>
+					มนัสนันท์  พันเลิศวงศ์สกุล  พากษ์เสียงมณีเมขลา<br>
+					นิวัติ  กองเพียร  พากษ์เสียงท้าวสักกเทวราช<br>
+					ปริทัศน์  กองเพียร  พากษ์เสียงอุจจทิจพราหมณ์มหาศาล
+				</p>
+			</div>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">
+		
+		h_menu1.addEventListener("click", clickContent1);
+		h_menu2.addEventListener("click", clickContent2);
+		h_menu3.addEventListener("click", clickContent3);
+
+		function clickContent1(){
+			clearClick();
+			inner_menu.classList.remove("show-menu");
+			m_content1.classList.remove("setDisplay");
+			h_menu1.classList.add("darkOrange");
+			h_menu1.classList.add("clickMenu");
+			m_content2.classList.add("setDisplay");
+			m_content3.classList.add("setDisplay");
+		}
+
+		function clickContent2(){
+			clearClick();
+			inner_menu.classList.remove("show-menu");
+			h_menu2.classList.add("darkOrange");
+			h_menu2.classList.add("clickMenu");
+			m_content1.classList.add("setDisplay");
+			m_content3.classList.add("setDisplay");
+			m_content2.classList.remove("setDisplay");
+		}
+
+		function clickContent3(){
+			clearClick();
+			inner_menu.classList.remove("show-menu");
+			h_menu3.classList.add("darkOrange");
+			h_menu3.classList.add("clickMenu");
+			m_content1.classList.add("setDisplay");
+			m_content2.classList.add("setDisplay");
+			m_content3.classList.remove("setDisplay");
+		}
+
+		function clearClick(){			
+			h_menu1.classList.remove("darkOrange");
+			h_menu1.classList.remove("clickMenu");
+			h_menu2.classList.remove("darkOrange");
+			h_menu2.classList.remove("clickMenu");
+			h_menu3.classList.remove("darkOrange");
+			h_menu3.classList.remove("clickMenu");
+		}
+
+		function navbar(){
+			inner_menu.classList.toggle("show-menu");
+		}
+
+		function toHomepage(){
+			location.href = "index.html";
+		}
+	</script>
 
 </body>
 </html>
