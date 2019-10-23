@@ -88,7 +88,7 @@ a{
 }
 
 .darkGreen{
-	color: #045664;
+	color: #055464;
 }
 
 .lightGreen{
@@ -367,6 +367,14 @@ a{
 	.mobile-width{
 		width: 80%;
 	}
+	/*.dropdown-submenu {
+		position: relative;
+	}
+	.dropdown-submenu .dropdown-menu {
+		top: 0;
+		left: 100%;
+		margin-top: -1px;
+	}*/
 }
 /*desktop*/
 @media only screen and (min-width: 813px) {
@@ -624,11 +632,12 @@ a{
 .innerMenu{
 	line-height: 2;
     position: relative;
+    left: -20px;
 }
 
 .innerMenu li{
-	font-size: 1.3em;
-	padding-right: 40px;
+	font-size: 1.1em;
+	/*padding-right: 40px;*/
 }
 
 .setBgWhite{
@@ -637,6 +646,10 @@ a{
 
 iframe{
 	padding: 20px;
+}
+
+.setBlock{
+	display: block;
 }
 
 /*.menu{
