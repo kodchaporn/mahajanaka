@@ -369,14 +369,12 @@ a{
 	.mobile-width{
 		width: 80%;
 	}
-	/*.dropdown-submenu {
-		position: relative;
+	.s-content{
+		padding: 10px;
 	}
-	.dropdown-submenu .dropdown-menu {
-		top: 0;
-		left: 100%;
-		margin-top: -1px;
-	}*/
+	img{
+		width: 100%;
+	}
 }
 /*desktop*/
 @media only screen and (min-width: 813px) {
@@ -473,6 +471,7 @@ a{
 		padding: 30px;
 		position: fixed;
 		margin-left: 30px;
+		box-sizing: border-box;
 	}
 	#h-history{
 		left: 40px;
@@ -557,8 +556,9 @@ a{
 	#backHome{
 		padding-left: 50px;
 		padding-top: 20px;
-		position: relative;
+		position: absolute;
 		left: 30px;
+		top: 75%;
 	}
 	.artistName{
 		/*background-color: red;*/
@@ -610,6 +610,10 @@ a{
     	top: 55px;
     	position: relative;
     	margin-left: 30%;
+	}
+	.s-content{
+		line-height: 2em;
+		padding-right: 130px;
 	}
 }
 
