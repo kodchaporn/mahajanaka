@@ -24,7 +24,7 @@
 		</div>
 		<div id="hamburger">
 			<a class="icon" onclick="navbar()">
-				<i class="fa fa-bars green" style="font-size:35px;"></i>
+				<i class="fa fa-bars green" id="hbg" style="font-size:35px;"></i>
 			</a>
 		</div>
 		<h1 class="darkGreen Winter" id="h-history">HISTORY</h1>
@@ -34,18 +34,18 @@
 			<li class="dropdown-submenu" id="m2">
 				<a href="#" id="head_m2" class="setDisplay">HISTORY</a>
 				<ul class="dropdown-menu innerMenu">
-					<li id="h_menu1" class="lightOrange clickMenu" style="display: none;">ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช</li><br>
-					<li id="h_menu2" style="display: none;">ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก</li>
+					<li id="h_menu1" class="lightOrange clickMenu">ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช</li><br>
+					<li id="h_menu2">ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก</li>
 				</ul>
 			</li>
 			<li class="dropdown-submenu setDisplay" id="m3" >
-				<a href="#" id="head_m3">MEDIA</a>
+				<a href="media.html" id="head_m3">MEDIA</a>
 				<li id="m_menu1" class="lightOrange clickMenu setDisplay" style="display: none;">พระมหาชนกฉบับตีพิมพ์</li>
 				<li id="m_menu2" class="setDisplay" style="display: none;">หนังสือการ์ตูนพระมหาชนก</li>
 				<li id="m_menu3" class="setDisplay" style="display: none;">แอนิเมชั่นพระมหาชนก</li>
 			</li>
 			<li class="dropdown-submenu setDisplay" id="m4">
-				<a href="#" id="head_m4">ARTIST</a>
+				<a href="artist.html" id="head_m4">ARTIST</a>
 				<li id="a_menu1" class="lightOrange clickMenu setDisplay" style="display: none;">เฉลิมชัย โฆษิตพิพัฒน์</li>
 				<li id="a_menu2" class="setDisplay" style="display: none;">ประหยัด พงษ์ดำ</li>
 				<li id="a_menu3" class="setDisplay" style="display: none;">ปรีชา เถาทอง</li>
@@ -210,59 +210,33 @@
 		function navbar(){
 			inner_menu.classList.toggle("show-menu");
 			m1.classList.remove("setDisplay");
-			head_m2.classList.remove("setDisplay");
 			m3.classList.remove("setDisplay");
 			m4.classList.remove("setDisplay");
-			h_menu1.classList.add("setDisplay");
-			h_menu2.classList.add("setDisplay");
+			hbg.classList.toggle("fa-bars");
+			hbg.classList.toggle("fa-times");
+			hbg.classList.toggle("darkOrange");
 		}
 
-		head_m2.addEventListener("click", h_dropdown);
-		function h_dropdown(){
-			if (h_menu1.style.display == "none") {
-				h_menu1.style.display = "block";
-				h_menu2.style.display = "block";
-			} else {
-				h_menu1.style.display = "none";
-				h_menu2.style.display = "none";
-			}
+		window.onload = chkSize();
+		function chkSize(){
+			if (screen.width < 812) {head_m2.classList.remove("setDisplay");}
 		}
 
-		head_m3.addEventListener("click", m_dropdown);
-		function m_dropdown(){
-			if (m_menu1.style.display == "none") {
-				m_menu1.style.display = "block";
-				m_menu2.style.display = "block";
-				m_menu3.style.display = "block";
-			} else {
-				m_menu1.style.display = "none";
-				m_menu2.style.display = "none";
-				m_menu3.style.display = "none";
-			}
-		}
+		window.addEventListener('resize', reportWindowSize);
 
-		head_m4.addEventListener("click", a_dropdown);
-		function a_dropdown(){
-			if (a_menu1.style.display == "none") {
-				a_menu1.style.display = "block";
-				a_menu2.style.display = "block";
-				a_menu3.style.display = "block";
-				a_menu4.style.display = "block";
-				a_menu5.style.display = "block";
-				a_menu6.style.display = "block";
-				a_menu7.style.display = "block";
-				a_menu8.style.display = "block";
-			} else {
-				a_menu1.style.display = "none";
-				a_menu2.style.display = "none";
-				a_menu3.style.display = "none";
-				a_menu4.style.display = "none";
-				a_menu5.style.display = "none";
-				a_menu6.style.display = "none";
-				a_menu7.style.display = "none";
-				a_menu8.style.display = "none";
+		function reportWindowSize(){
+			if (screen.width > 812){
+				m1.classList.add("setDisplay");
+				head_m2.classList.add("setDisplay");
+				m3.classList.add("setDisplay");
+				m4.classList.add("setDisplay");
+			}else{
+				head_m2.classList.remove("setDisplay");
 			}
 		}
+		
+
+		
 
 		function toHomepage(){
 			location.href = "index.html";

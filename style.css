@@ -32,6 +32,8 @@ ul{
 
 a{
 	text-decoration: none;
+	color: #055464;
+	font-size: 1.3em;
 }
 
 @font-face {
@@ -637,7 +639,7 @@ a{
 
 .innerMenu li{
 	font-size: 1.1em;
-	/*padding-right: 40px;*/
+	padding-right: 20px;
 }
 
 .setBgWhite{
