@@ -595,7 +595,7 @@ a{
 		width:40%;
 	}
 	.a-innerContent{
-		width: 70%;
+		width: 65%;
 		top: 125px;
 		left: 26%;
 		padding-right: 40px;
@@ -635,6 +635,7 @@ a{
 	line-height: 2;
     position: relative;
     left: -20px;
+    display: grid;
 }
 
 .innerMenu li{
@@ -653,6 +654,10 @@ iframe{
 .setBlock{
 	display: block;
 }
+
+/*.dropdown-submenu{
+	display: grid;
+}*/
 
 /*.menu{
 	width: 35%;

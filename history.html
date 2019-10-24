@@ -27,33 +27,22 @@
 				<i class="fa fa-bars green" id="hbg" style="font-size:35px;"></i>
 			</a>
 		</div>
-		<h1 class="darkGreen Winter" id="h-history">HISTORY</h1>
+		<h1 class="lightOrange Winter" id="h-history">HISTORY</h1>
 		<!-- menu -->
 		<ul class="innerMenu darkGreen Srinakharinwirot" id="inner_menu">
 			<li id="m1" class="setDisplay"><a href="story.html">STORY</a></li>
 			<li class="dropdown-submenu" id="m2">
 				<a href="#" id="head_m2" class="setDisplay">HISTORY</a>
 				<ul class="dropdown-menu innerMenu">
-					<li id="h_menu1" class="lightOrange clickMenu">ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช</li><br>
+					<li id="h_menu1" class="lightOrange clickMenu">ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช</li>
 					<li id="h_menu2">ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก</li>
 				</ul>
 			</li>
 			<li class="dropdown-submenu setDisplay" id="m3" >
 				<a href="media.html" id="head_m3">MEDIA</a>
-				<li id="m_menu1" class="lightOrange clickMenu setDisplay" style="display: none;">พระมหาชนกฉบับตีพิมพ์</li>
-				<li id="m_menu2" class="setDisplay" style="display: none;">หนังสือการ์ตูนพระมหาชนก</li>
-				<li id="m_menu3" class="setDisplay" style="display: none;">แอนิเมชั่นพระมหาชนก</li>
 			</li>
 			<li class="dropdown-submenu setDisplay" id="m4">
 				<a href="artist.html" id="head_m4">ARTIST</a>
-				<li id="a_menu1" class="lightOrange clickMenu setDisplay" style="display: none;">เฉลิมชัย โฆษิตพิพัฒน์</li>
-				<li id="a_menu2" class="setDisplay" style="display: none;">ประหยัด พงษ์ดำ</li>
-				<li id="a_menu3" class="setDisplay" style="display: none;">ปรีชา เถาทอง</li>
-				<li id="a_menu4" class="setDisplay" style="display: none;">พิชัย นิรันต์</li>
-				<li id="a_menu5" class="setDisplay" style="display: none;">เนติกร ชินโย</li>
-				<li id="a_menu6" class="setDisplay" style="display: none;">จินตนา เปี่ยมศิริ</li>
-				<li id="a_menu7" class="setDisplay" style="display: none;">ปัญญา วิจินธนสาร</li>
-				<li id="a_menu8" class="setDisplay" style="display: none;">ธีระวัฒน์ คะนะมะ</li>
 			</li>
 		</ul>
 		<div id="backHome">
@@ -188,6 +177,9 @@
 			sec_5.classList.remove("setDisplay");
 			sec_6.classList.remove("setDisplay");
 			inner_menu.classList.remove("show-menu");
+			hbg.classList.remove("fa-times");
+			hbg.classList.add("fa-bars");
+			hbg.classList.remove("darkOrange");
 		}
 		
 		function clickContent2(){
@@ -204,6 +196,9 @@
 			sec_5.classList.add("setDisplay");
 			sec_6.classList.add("setDisplay");
 			inner_menu.classList.remove("show-menu");
+			hbg.classList.remove("fa-times");
+			hbg.classList.add("fa-bars");
+			hbg.classList.remove("darkOrange");
 			
 		}
 

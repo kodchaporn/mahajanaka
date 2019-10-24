@@ -24,14 +24,26 @@
 		</div>
 		<div id="hamburger">
 			<a class="icon" onclick="navbar()">
-				<i class="fa fa-bars green" style="font-size:35px;"></i>
+				<i class="fa fa-bars green" id="hbg" style="font-size:35px;"></i>
 			</a>
 		</div>
 		<h1 class="darkOrange Winter" id="h-history">MEDIA</h1>
 		<ul class="innerMenu darkGreen Srinakharinwirot" id="inner_menu">
-			<li id="h_menu1" class="darkOrange clickMenu">พระมหาชนกฉบับตีพิมพ์</li><br>
-			<li id="h_menu2">หนังสือการ์ตูนพระมหาชนก</li><br>
-			<li id="h_menu3">แอนิเมชั่นพระมหาชนก</li>
+			<li id="m1" class="setDisplay"><a href="story.html">STORY</a></li>
+			<li class="dropdown-submenu setDisplay" id="m2">
+				<a href="history.html" id="head_m2">HISTORY</a>
+			</li>
+			<li class="dropdown-submenu" id="m3" >
+				<a href="media.html" id="head_m3" class="setDisplay">MEDIA</a>
+				<ul class="innerMenu">
+					<li id="m_menu1" class="darkOrange clickMenu">พระมหาชนกฉบับตีพิมพ์</li>
+					<li id="m_menu2">หนังสือการ์ตูนพระมหาชนก</li>
+					<li id="m_menu3">แอนิเมชั่นพระมหาชนก</li>
+				</ul>
+			</li>
+			<li class="dropdown-submenu setDisplay" id="m4">
+				<a href="artist.html" id="head_m4">ARTIST</a>				
+			</li>
 		</ul>
 		<div id="backHome">
 			<a href="index.html"><i class="fa fa-chevron-circle-left lightGreen" style="font-size:48px"></i></a>
@@ -118,16 +130,16 @@
 
 	<script type="text/javascript">
 		
-		h_menu1.addEventListener("click", clickContent1);
-		h_menu2.addEventListener("click", clickContent2);
-		h_menu3.addEventListener("click", clickContent3);
+		m_menu1.addEventListener("click", clickContent1);
+		m_menu2.addEventListener("click", clickContent2);
+		m_menu3.addEventListener("click", clickContent3);
 
 		function clickContent1(){
 			clearClick();
 			inner_menu.classList.remove("show-menu");
 			m_content1.classList.remove("setDisplay");
-			h_menu1.classList.add("darkOrange");
-			h_menu1.classList.add("clickMenu");
+			m_menu1.classList.add("darkOrange");
+			m_menu1.classList.add("clickMenu");
 			m_content2.classList.add("setDisplay");
 			m_content3.classList.add("setDisplay");
 		}
@@ -135,8 +147,8 @@
 		function clickContent2(){
 			clearClick();
 			inner_menu.classList.remove("show-menu");
-			h_menu2.classList.add("darkOrange");
-			h_menu2.classList.add("clickMenu");
+			m_menu2.classList.add("darkOrange");
+			m_menu2.classList.add("clickMenu");
 			m_content1.classList.add("setDisplay");
 			m_content3.classList.add("setDisplay");
 			m_content2.classList.remove("setDisplay");
@@ -145,24 +157,57 @@
 		function clickContent3(){
 			clearClick();
 			inner_menu.classList.remove("show-menu");
-			h_menu3.classList.add("darkOrange");
-			h_menu3.classList.add("clickMenu");
+			m_menu3.classList.add("darkOrange");
+			m_menu3.classList.add("clickMenu");
 			m_content1.classList.add("setDisplay");
 			m_content2.classList.add("setDisplay");
 			m_content3.classList.remove("setDisplay");
 		}
 
 		function clearClick(){			
-			h_menu1.classList.remove("darkOrange");
-			h_menu1.classList.remove("clickMenu");
-			h_menu2.classList.remove("darkOrange");
-			h_menu2.classList.remove("clickMenu");
-			h_menu3.classList.remove("darkOrange");
-			h_menu3.classList.remove("clickMenu");
+			m_menu1.classList.remove("darkOrange");
+			m_menu1.classList.remove("clickMenu");
+			m_menu2.classList.remove("darkOrange");
+			m_menu2.classList.remove("clickMenu");
+			m_menu3.classList.remove("darkOrange");
+			m_menu3.classList.remove("clickMenu");
+			hbg.classList.remove("fa-times");
+			hbg.classList.add("fa-bars");
+			hbg.classList.remove("darkOrange");
 		}
 
 		function navbar(){
 			inner_menu.classList.toggle("show-menu");
+			m1.classList.remove("setDisplay");
+			m2.classList.remove("setDisplay");
+			m3.classList.remove("setDisplay");
+			m4.classList.remove("setDisplay");
+			hbg.classList.toggle("fa-bars");
+			hbg.classList.toggle("fa-times");
+			hbg.classList.toggle("darkOrange");
+		}
+
+		window.onload = chkSize();
+		function chkSize(){
+			if (screen.width < 812) {
+				// mobile
+				head_m3.classList.remove("setDisplay");
+				head_m3.classList.add("darkOrange");
+			}
+		}
+
+		window.addEventListener('resize', reportWindowSize);
+
+		function reportWindowSize(){
+			if (screen.width > 812){
+				// desktop
+				m1.classList.add("setDisplay");
+				m2.classList.add("setDisplay");
+				m4.classList.add("setDisplay");
+				head_m3.classList.add("setDisplay");
+			}else{
+				head_m3.classList.remove("setDisplay");
+			}
 		}
 
 		function toHomepage(){
