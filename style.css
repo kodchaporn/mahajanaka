@@ -659,6 +659,17 @@ iframe{
 	display: block;
 }
 
+.footer{
+	text-align: center;
+	height: auto;
+	padding: 20px;
+	background: pink;
+	margin-top: 10%;
+	position: relative;
+	bottom: 0%;
+	/*width: 100%;*/
+}
+
 /*.dropdown-submenu{
 	display: grid;
 }*/
