@@ -279,6 +279,7 @@ a{
 		padding: 20px;
 		top: 55px;
 		position: relative;
+		margin-bottom: 5%;
 	}
 
 	.h-innerContent{
@@ -367,13 +368,18 @@ a{
     	position: relative;
 	}
 	.mobile-width{
-		width: 80%;
+		width: 100%;
 	}
 	.s-content{
 		padding: 10px;
 	}
 	img{
 		width: 100%;
+	}
+	.footer{
+		background: pink;
+		padding: 10px;
+		text-align: center;
 	}
 }
 /*desktop*/
@@ -514,7 +520,7 @@ a{
 		padding: 10px;
 		position: relative;
 	}
-	#sec_1{
+	.sec1{
 		height: 55vh;
 	}
 	#sec_2{
@@ -582,21 +588,20 @@ a{
 	}
 	.a-work{
 		/*background-color: black;*/
-		position: absolute;
-    	top: 280px;
-    	width: 100%;
+		position: relative;
+    	top: 75px;
     	padding-top: 30px;
 	}
 	.a-section-1{
 		padding: 10px;
 		position: relative;
+		height: 80vh;
 	}
 	.a-img{
 		width:40%;
 	}
 	.a-innerContent{
 		width: 65%;
-		top: 125px;
 		left: 26%;
 		padding-right: 40px;
 		display: inline-block;
@@ -615,6 +620,17 @@ a{
 		line-height: 2em;
 		padding-right: 130px;
 	}
+	.footer{
+	text-align: center;
+	height: auto;
+	padding: 20px;
+	background: pink;
+	position: relative;
+	bottom: 0%;
+	margin-left: 30%;
+	/*width: 100%;*/
+	}
+
 }
 
 /*--------------------------------------------------------*/
@@ -659,15 +675,15 @@ iframe{
 	display: block;
 }
 
-.footer{
-	text-align: center;
-	height: auto;
-	padding: 20px;
+.a-footer{
 	background: pink;
-	margin-top: 10%;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
 	position: relative;
 	bottom: 0%;
-	/*width: 100%;*/
+	margin-top: 15%;
+	margin-left: 30%;
 }
 
 /*.dropdown-submenu{

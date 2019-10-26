@@ -54,7 +54,7 @@
 
 	<div class="h-content" id="h_content">
 		<p class="lightOrange Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช</p>
-		<div class="h-section-1" id="sec_1">
+		<div class="h-section-1 sec1" id="sec_1">
 			<div class="img-left">
 				<img src="img/history/1.jpg" class="h_imgContent" id="h_img">
 			</div>
@@ -183,6 +183,7 @@
 		}
 		
 		function clickContent2(){
+			sec_1.classList.remove("sec1");
 			h_menu1.classList.remove("lightOrange");
 			h_menu1.classList.remove("clickMenu");
 			h_menu2.classList.add("lightOrange");
