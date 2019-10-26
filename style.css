@@ -381,6 +381,13 @@ a{
 		padding: 10px;
 		text-align: center;
 	}
+	.a-footer{
+		margin-left: 0;
+		background: pink;
+		text-align: center;
+		padding: 10px;
+		margin-top: 50px;
+	}
 }
 /*desktop*/
 @media only screen and (min-width: 813px) {
@@ -615,6 +622,7 @@ a{
     	top: 55px;
     	position: relative;
     	margin-left: 30%;
+    	display: inline-block;
 	}
 	.s-content{
 		line-height: 2em;
@@ -630,6 +638,16 @@ a{
 	margin-left: 30%;
 	/*width: 100%;*/
 	}
+	.a-footer{
+	background: pink;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	position: relative;
+	bottom: 0%;
+	margin-top: 15%;
+	margin-left: 30%;
+}
 
 }
 
@@ -675,16 +693,7 @@ iframe{
 	display: block;
 }
 
-.a-footer{
-	background: pink;
-	text-align: center;
-	padding: 20px;
-	box-sizing: border-box;
-	position: relative;
-	bottom: 0%;
-	margin-top: 15%;
-	margin-left: 30%;
-}
+
 
 /*.dropdown-submenu{
 	display: grid;
