@@ -112,7 +112,10 @@
 
 		window.onload = chkSize();
 		function chkSize(){
-			if (screen.width < 812) {head_m1.classList.remove("setDisplay");}
+			if (screen.width < 812) {
+				head_m1.classList.remove("setDisplay");
+				head_m1.classList.add("lightGreen");
+			}
 		}
 
 		window.addEventListener('resize', reportWindowSize);

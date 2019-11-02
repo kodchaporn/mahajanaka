@@ -4,64 +4,48 @@
 	<title>Mahajanaka</title>
 	<meta charset=utf-8>
 	<meta name=description content="">
-	<meta name=viewport content="width=device-width, initial-scale=1">
-
-	
+	<meta name=viewport content="width=device-width, initial-scale=1">	
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		body{overflow: hidden;}
+	</style>
 </head>
 <body>
-
-	<!-- <div class="menu" id="menuBar">
-		<div id="divLogo">
-			<img src="img/home/logo.svg" id="logo" onclick="toHomepage()">
-		</div>
-		
-		<div id="listMenu">
-			<ul>
-				<li id="m_story" class="h_menu">STORY</li>
-				<li id="m_history" class="h_menu">HISTORY</li>
-				<li id="m_media" class="h_menu">MEDIA</li>
-				<li id="m_artist" class="h_menu">ARTIST</li>
-			</ul>
-			
+	<div class="container">
+		<div class="h-menu" id="h_menu">
+			<div id="divLogo">
+				<img src="img/home/logo.svg" id="logo" onclick="toHomepage()">
+			</div>
+			<div id="hamburger">
+				<a class="icon" onclick="navbar()">
+					<i class="fa fa-bars green" style="font-size:35px;"></i>
+				</a>
+			</div>
+			<div id="listMenu">
+				<ul class="innerMenu darkGreen Winter">
+					<li id="m_story" class="h_menu" style="font-size: 2.7em;">STORY</li>
+					<li id="m_history" class="h_menu" style="font-size: 2.7em;">HISTORY</li>
+					<li id="m_media" class="h_menu" style="font-size: 2.7em;">MEDIA</li>
+					<li id="m_artist" class="h_menu" style="font-size: 2.7em;">ARTIST</li>
+				</ul>
+			</div>
+			<div id="caption">
+				<p id="captionText"></p>
+			</div>
 		</div>
 		<div id="clickMe"></div>
-		<div id="caption">
-			<p id="captionText"></p>
-		</div>
-	</div> -->
 
-	<div class="h-menu" id="h_menu">
-		<div id="divLogo">
-			<img src="img/home/logo.svg" id="logo" onclick="toHomepage()">
-		</div>
-		<div id="hamburger">
-			<a class="icon" onclick="navbar()">
-				<i class="fa fa-bars green" style="font-size:35px;"></i>
-			</a>
-		</div>
-		<div id="listMenu">
-			<ul class="innerMenu darkGreen Winter">
-				<li id="m_story" class="h_menu" style="font-size: 2.7em;">STORY</li>
-				<li id="m_history" class="h_menu" style="font-size: 2.7em;">HISTORY</li>
-				<li id="m_media" class="h_menu" style="font-size: 2.7em;">MEDIA</li>
-				<li id="m_artist" class="h_menu" style="font-size: 2.7em;">ARTIST</li>
-			</ul>
-		</div>
-		<div id="caption">
-			<p id="captionText"></p>
-		</div>
-	</div>
-	<div id="clickMe"></div>
-
-	<div id="homepage" class="home-1">
+		<div id="homepage" class="home-1">
 			
 			<div id="obj">
 				
 			</div>	
 
 		</div>
+		
+	</div>
+	
 	<script type="text/javascript" src="home.js"></script>
 
 </body>
