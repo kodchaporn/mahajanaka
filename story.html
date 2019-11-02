@@ -15,6 +15,13 @@
 		@media only screen and (min-width: 770px) {
 			#menuBar{display: none;}
 		}
+		#paragraph{
+		transform: scale(1);
+		transition: all .5s;
+	}
+	#paragraph.small{
+		transform: scale(0.2);
+	}
 	</style>
 </head>
 <body>
@@ -52,7 +59,7 @@
 	<div class="h-content" id="m_content1">
 		<p class="lightGreen Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">เนื้อเรื่อง<br>พระมหาชนก</p>
 		<img src="img/story/11.png">
-		<p class="darkGreen s-content">
+		<p class="darkGreen s-content" id="paragraph">
 			พระมหากษัตริย์ผู้ครองราชย์นครมิถิลาเมืองหลวงแห่งแคว้นวิเทหะ ทรงมีพระราชโอรสสองพระองค์ คือ พระอริฏฐชนกและพระโปลชนก หลังจากพระราชบิดาสวรรคต พระอริฏฐชนกผู้เป็นพระมหาอุปราชก็เสด็จขึ้นครองราชย์ต่อมาโดยทรงแต่งตั้งพระโปลชนกผู้เป็นน้องชายเป็นพระมหาอุปราช<br><br>
 			ในเวลาต่อได้มีเหล่าอำมาตย์ผู้ทุจริตบางคนออกอุบายให้พระอริฏฐชนกเกิดความระแวงน้องชายตนเอง โดยพากันเพ็ดทูลว่าพระโปลชนกกำลังวางแผนคิดการประทุษร้ายต่ออาณาจักร พระราชาทรงหลงเชื่ออำมาตย์เหล่านั้น จึงทรงให้ราชมัลจับกุมพระโปลชนกไปขังไว้ทว่าด้วยบุญบารมีของพระโปลชนก พระองค์จึงสามารถหลบออกจากที่คุมขังและเสด็จหนีไปยังชายแดนได้
 		</p>
@@ -134,6 +141,19 @@
 		function toHomepage(){
 			location.href = "index.html";
 		}
+		// x = document.getElementsByTagName("p");
+		function ppp(){
+			
+			let ppR = paragraph.getBoundingClientRect();
+			// console.log(x[1])
+			if (ppR.top < window.innerHeight && ppR.bottom > 0) {
+				paragraph.classList.remove('small')
+			}
+			else {
+				paragraph.classList.add('small')
+			}
+		}
+		window.addEventListener("scroll", ppp);
 	</script>
 </body>
 </html>
