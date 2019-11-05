@@ -16,7 +16,7 @@ function clickStory() {
 	m_story.classList.add("lightGreen");
 	captionText.innerText = "“เรื่องย่อพระราชนิพนธ์พระมหาชนกของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช”";
 	captionText.classList.add("lightGreen");
-	clickMe.addEventListener("click", goIntoStory);
+	obj.addEventListener("click", goIntoStory);
 }
 
 document.getElementById("m_history").onclick = function() {clickHistory()};
@@ -30,7 +30,7 @@ function clickHistory() {
 	m_history.classList.add("lightOrange");
 	captionText.classList.add("lightOrange");
 	captionText.innerText = "“ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก และผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช”";
-	clickMe.addEventListener("click", goIntoHistory);
+	obj.addEventListener("click", goIntoHistory);
 
 }
 
@@ -45,7 +45,7 @@ function clickMedia() {
 	m_media.classList.add("darkOrange");
 	captionText.classList.add("darkOrange");
 	captionText.innerText = "“ผลงานฉบับตีพิมพ์ ผลงานการ์ตูน และ แอนิเมชั่น”";
-	clickMe.addEventListener("click", goIntoMedia);
+	obj.addEventListener("click", goIntoMedia);
 }
 
 document.getElementById("m_artist").onclick = function() {clickArtist()};
@@ -59,7 +59,7 @@ function clickArtist() {
 	m_artist.classList.add("green");
 	captionText.classList.add("green");
 	captionText.innerText = "“คลังภาพรวบรวมศิลปินที่ถวายผลงานภาพประกอบพระราชนิพนธ์พระมหาชนก”";
-	clickMe.addEventListener("click", goIntoArtist);
+	obj.addEventListener("click", goIntoArtist);
 }
 
 function clearClick(){
