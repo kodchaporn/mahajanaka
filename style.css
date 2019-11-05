@@ -89,6 +89,11 @@ a{
 	to{transform: rotate(0deg);}
 }
 
+@keyframes ani-page{
+	from{transform: scale(0.2);}
+	to{transform: scale(1);}
+}
+
 .darkGreen{
 	color: #055464;
 }
@@ -390,15 +395,15 @@ a{
 		width: 100%;
 	}
 	.footer{
-		background: pink;
-		padding: 10px;
+		background: #099690;
+		padding: 30px;
 		text-align: center;
 	}
 	.a-footer{
 		margin-left: 0;
-		background: pink;
+		background: #099690;
 		text-align: center;
-		padding: 10px;
+		padding: 30px;
 		margin-top: 50px;
 	}
 	.container{
@@ -523,8 +528,13 @@ a{
 		padding: 20px;
 		margin-top: 45px;
 		margin-left: 33%;
+		/*height: 100vh;*/
 		/*position: relative;*/
 		/*top: 100px;*/
+
+	}
+	.m-1{
+		height: 67vh;	
 	}
 
 	.h-innerContent{
@@ -659,14 +669,15 @@ a{
 	text-align: center;
 	height: auto;
 	padding: 20px;
-	background: pink;
+	background: #099690;
 	position: relative;
 	bottom: 0%;
+	margin-top: 5%;
 	margin-left: 30%;
 	/*width: 100%;*/
 	}
 	.a-footer{
-	background: pink;
+	background: #099690;
 	text-align: center;
 	padding: 20px;
 	box-sizing: border-box;
@@ -723,3 +734,7 @@ iframe{
 	display: block;
 }
 
+.animate{
+	transition: all .3s;
+	animation: ani-page .3s;
+}
