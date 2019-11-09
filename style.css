@@ -1,7 +1,6 @@
 body{
 	margin: 0;
 	font-family: Winter !important;
-	/*overflow: hidden;*/
 }
 
 h1{
@@ -193,15 +192,8 @@ a{
 	.object{
 		width: 100%;
 		height: 30vh;
-		/*display: flex;*/
-		/*align-self: flex-end;*/
-		/*flex-flow: column wrap;*/
-		/*justify-content: space-around;*/
-		/*align-items: flex-start;*/
-		/*align-self: flex-end;*/
 	}
 	#divLogo{
-		/*background-color: white;*/
 		width: 70px;
 		height: 70px;
 	}
@@ -209,7 +201,6 @@ a{
 		width: 100%;
 	}
 	#menuBar{
-		/*background-color: red;*/
 		border: 1px #099690;
 		border-radius: 5px;
 		border-style: none solid solid solid;
@@ -226,14 +217,6 @@ a{
 	li{
 		list-style-type: none;
 	}
-	/*#caption{
-		position: fixed;
-		bottom: 0%;
-		padding: 20px;
-		padding-left: 30px;
-		text-align: center;
-
-	}*/
 	#captionText{
 		font-size: 1.5em;
 		margin-top: 30px;
@@ -248,11 +231,7 @@ a{
 	}
 	#homepage{
 		width: 100%;
-		/*height: 100vh;*/
-		/*background-color: white;*/
 		background-repeat: no-repeat;
-		/*position: absolute;*/
-		/*top: 45%;*/
 		overflow: hidden;
 		display: flex;
 		align-self: flex-end;
@@ -273,7 +252,6 @@ a{
 	}
 	.home-4{
 		background-image: url(img/home/women.png);
-		/*background-size: 100%;*/
 		background-repeat: no-repeat;
 		animation: rot 3s;
 		transform: scale(1);
@@ -326,7 +304,6 @@ a{
 		background-image: url(img/home/1-m.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		/*animation: translate-x 1s;*/
 		transition: all .5s;
 		position: relative;
 		right: 27%;
@@ -355,39 +332,6 @@ a{
 
 	}
 
-	/*.obj-s{
-		background-image: url(img/home/obj-s.png);
-		background-size: 100%;
-		background-repeat: no-repeat;
-		animation: obj-scl .5s infinite alternate ;
-		transition: all .5s;
-	}
-
-	.obj-h{
-		background-image: url(img/home/obj-h.png);
-		background-size: 100%;
-		background-repeat: no-repeat;
-		animation: obj-scl .5s infinite alternate ;
-		transition: all .5s;
-	}
-
-	.obj-m{
-		background-image: url(img/home/obj-m.png);
-		background-size: 100%;
-		background-repeat: no-repeat;
-		animation: obj-scl .5s infinite alternate ;
-		transition: all .5s;
-	}
-
-	.obj-a{
-		background-image: url(img/home/obj-a.png);
-		background-size: 100%;
-		background-repeat: no-repeat;
-		animation: obj-scl .5s infinite alternate ;
-		transition: all .5s;
-
-	}*/
-
 	.h_imgContent{
 		width: 100%;
 	}
@@ -408,7 +352,6 @@ a{
 	}
 
 	.h-content{
-		/*width: 80%;*/
 		padding: 20px;
 		top: 55px;
 		position: relative;
@@ -420,7 +363,6 @@ a{
 		padding-right: 20px;
 		display: inline-block;
 		line-height: 1.7;
-		/*background-color: yellow;*/
 	}
 	.h-innerContent2{
 		padding-left: 20px;
@@ -431,14 +373,12 @@ a{
 
 	.h-section-1{
 		width: 100%;
-		/*height: 200%;*/
 		padding: 10px;
 		position: relative;
 		display: -webkit-inline-box;
 	}
 
 	.h-section-2{
-		/*height: 200%;*/
 		padding: 10px;
 	}
 
@@ -447,13 +387,11 @@ a{
 	}
 
 	.img-left{
-		/*background-color: purple;*/
 		width: 100%;
 		height: 200px;
 		display: inline-block;
 	}
 	.img-right{
-		/*background-color: red;*/
 		display: inline-block;
 		width: 100%;
 	}
@@ -461,7 +399,6 @@ a{
 		display: none;
 	}
 	#hamburger{
-		/*background-color: green;*/
 		width: 30px;
 		height: 30px;
 		position: absolute;
@@ -495,7 +432,6 @@ a{
 		width: 40%;
 	}
 	.a-content{
-		/*width: 100%;*/
     	padding: 20px;
     	top: 55px;
     	position: relative;
@@ -516,21 +452,10 @@ a{
 		color: white;
 		margin-top: 55px;
 	}
-	/*.a-footer{
-		margin-left: 0;
-		background: #099690;
-		text-align: center;
-		padding: 30px;
-		margin-top: 50px;
-		color: white;
-	}*/
 	.container{
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	/*flex-flow: column wrap;
-	align-items: flex-start;
-	justify-content: space-around;*/
 	align-items: flex-start;
     justify-content: flex-end;
 }
@@ -554,22 +479,11 @@ a{
 	}
 	#captionText{
 		margin-top: 30px;
-		/*padding: 20px;*/
 	}
 	#caption{
 		width: 65%;
-		/*background: white;*/
 	}
-	/*#home_inner_menu{
-		position: relative;
-		left: 30px;
-		font-size: 2.7em;
-		line-height: 1.8;
-		color: #055464;
-		width: 70px;
-	}*/
 	#clickMe{
-		/*background-color: pink;*/
 		height: 70vh;
 		width: 70%;
 		position: absolute;
@@ -605,7 +519,6 @@ a{
 	}
 	.home-4{
 		background-image: url(img/home/women.png);
-		/*background-size: 100%;*/
 		background-repeat: no-repeat;
 		animation: rot 3s;
 		transform: scale(1);
@@ -657,7 +570,6 @@ a{
 		background-image: url(img/home/1-m.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		/*animation: translate-x 1s;*/
 		transition: all .5s;
 		background-size: cover;
 		position: relative;
@@ -704,25 +616,17 @@ a{
 	}
 
 	.h-content{
-		/*width: 80%;*/
 		padding: 20px;
-		/*margin-top: 45px;*/
 		margin-left: 27%;
-		/*height: 100vh;*/
-		/*position: relative;*/
-		/*top: 100px;*/
 		padding-top: 55px;
-
 	}
 	.m-1{
 		height: 67vh;	
 	}
 
 	.h-innerContent{
-		/*width: 50%;*/
 		padding-right: 65px;
 		display: inline-block;
-		/*position: absolute;*/
 		line-height: 1.7;
 	}
 
@@ -733,42 +637,12 @@ a{
 	.reverse{
 		flex-direction: row-reverse
 	}
-
-	/*.h-section-2{
-		padding: 10px;
-		position: relative;
-	}
-	.section2{
-		float: right;
-	}*/
-	/*.sec1{
-		height: 55vh;
-	}
-	#sec_2{
-		height: 60vh;
-	}
-	#sec_3{
-		height: 55vh;
-	}
-	#sec_4{
-		height: 80vh;
-	}
-
-	#sec_5{
-		height: 50vh;
-	}
-	#sec_6{
-		height: 80vh;
-	}*/
 	.img-left{
-		/*width: 35%;*/
     	display: inline-block;
     	padding-right: 65px;
 	}
 
 	.img-right{
-		/*width: 35%;*/
-    	/*display: inline-block;*/
     	margin: 10px;
     	position: absolute;
     	right: 0%;
@@ -776,33 +650,21 @@ a{
 	#backHome{
 		padding-left: 50px;
 		padding-top: 20px;
-		/*position: absolute;*/
-		/*left: 30px;*/
 		top: 80%;
 		position: fixed;
 	}
 	.artistName{
-		/*background-color: red;*/
 		width: 50%;
 		position: absolute;
 		top: 0%;
 		left: 25%;
 		line-height: 0.5;
 	}
-	.a-innerContent{
-		/*width: 65%;
-		top: 130px;
-		padding-right: 40px;
-		display: inline-block;
-		position: absolute;
-		line-height: 1.7;*/
-	}
 	.a-img{
 		width: 25%;
 		display: inline-block;
 	}
 	.a-work{
-		/*background-color: black;*/
 		position: relative;
     	top: 75px;
     	padding-top: 30px;
@@ -829,11 +691,9 @@ a{
 	.a-content{
     	padding: 20px;
     	top: 55px;
-    	/*margin-top: 50px;*/
     	position: relative;
     	margin-left: 25%;
     	height: 85vh;
-    	/*display: inline-block;*/
 	}
 	.s-content{
 		line-height: 2em;
@@ -847,8 +707,6 @@ a{
 	position: relative;
 	bottom: 0%;
 	margin-top: 5%;
-	/*margin-left: 30%;*/
-	/*width: 100%;*/
 	color: white;
 	}
 	.a-footer{
@@ -859,35 +717,20 @@ a{
 	position: relative;
 	bottom: 0%;
 	margin-top: 15%;
-	/*margin-left: 30%;*/
 	color: white;
-}
+	}
 
 }
 
 /*--------------------------------------------------------*/
 
-
-#wrap{
-	/*width: 100%;
-	height: 100vh;
-	position: absolute;
-	float: left;
-	display: inline-flex;*/
-}
-
 .setDisplay{
 	display: none;
 }
-/*
-.setOverflow{
-	overflow: auto !important;
-}*/
 .innerMenu{
 	line-height: 2;
     position: relative;
     left: -20px;
-    /*display: grid;*/
 }
 .dropdown-menu{
 	display: grid;
