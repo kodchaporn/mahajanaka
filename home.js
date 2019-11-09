@@ -13,6 +13,7 @@ document.getElementById("m_story").onclick = function() {clickStory()};
 function clickStory() {
 	clearClick();
 	btn.classList.remove("setDisplay");
+	btn.classList.add("lightGreen-b");
 	homepage.classList.add("story");
 	obj.classList.add("obj-s");
 	obj2.classList.add("obj-s2");
@@ -29,6 +30,7 @@ document.getElementById("m_history").onclick = function() {clickHistory()};
 function clickHistory() {
 	clearClick();
 	btn.classList.remove("setDisplay");
+	btn.classList.add("lightOrange-b");
 	homepage.classList.add("history");
 	obj.classList.add("obj-h");
 	m_history.classList.add("clickMenu");
@@ -44,6 +46,7 @@ document.getElementById("m_media").onclick = function() {clickMedia()};
 function clickMedia() {
 	clearClick();
 	btn.classList.remove("setDisplay");
+	btn.classList.add("darkOrange-b");
 	homepage.classList.add("media");
 	obj.classList.add("obj-m");
 	obj2.classList.add("obj-m2");
@@ -60,6 +63,7 @@ document.getElementById("m_artist").onclick = function() {clickArtist()};
 function clickArtist() {
 	clearClick();
 	btn.classList.remove("setDisplay");
+	btn.classList.add("green-b");
 	homepage.classList.add("artist");
 	obj.classList.add("obj-a");
 	m_artist.classList.add("clickMenu");
@@ -100,6 +104,10 @@ function clearClick(){
 	captionText.classList.remove("lightGree");
 	captionText.classList.remove("lightOrange");
 	captionText.classList.remove("darkOrange");
+	btn.classList.remove("green-b");
+	btn.classList.remove("lightGree-b");
+	btn.classList.remove("lightOrange-b");
+	btn.classList.remove("darkOrange-b");
 }
 
 function goIntoStory(){
