@@ -539,7 +539,7 @@ a{
 		/*width: 80%;*/
 		padding: 20px;
 		/*margin-top: 45px;*/
-		margin-left: 25%;
+		margin-left: 27%;
 		/*height: 100vh;*/
 		/*position: relative;*/
 		/*top: 100px;*/
@@ -552,32 +552,28 @@ a{
 
 	.h-innerContent{
 		/*width: 50%;*/
-		padding-left: 40px;
 		padding-right: 40px;
 		display: inline-block;
-		position: absolute;
+		/*position: absolute;*/
 		line-height: 1.7;
 	}
 
-	.h-innerContent2{
-		width: 50%;
-		padding-left: 40px;
-		padding-right: 40px;
-		display: inline-block;
-		position: absolute;
-		line-height: 1.7;
+	.h-section{
+		padding: 10px;
+		display: flex;
+	}
+	.reverse{
+		flex-direction: row-reverse
 	}
 
-	.h-section-1{
+	/*.h-section-2{
 		padding: 10px;
 		position: relative;
 	}
-
-	.h-section-2{
-		padding: 10px;
-		position: relative;
-	}
-	.sec1{
+	.section2{
+		float: right;
+	}*/
+	/*.sec1{
 		height: 55vh;
 	}
 	#sec_2{
@@ -595,18 +591,11 @@ a{
 	}
 	#sec_6{
 		height: 80vh;
-	}
-
-	.h-section-2 img{
-		float: right;
-	}
-
-	.full{
-		width: 90%;
-	}
+	}*/
 	.img-left{
 		/*width: 35%;*/
     	display: inline-block;
+    	padding-right: 50px;
 	}
 
 	.img-right{
