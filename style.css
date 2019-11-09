@@ -160,7 +160,6 @@ a{
 	background-size: 100%;
 	background-repeat: no-repeat;
 	animation: show-bg 1s 1 reverse;
-	transform: scale(1);
 }
 
 .story{
@@ -201,96 +200,7 @@ a{
 	list-style-type: disc;
 }
 
-.home-2{
-	background-image: url(img/home/star.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	animation: opa 2s infinite;
-	animation-direction: alternate;
-	background-size: cover;
-}
-.home-3{
-	background-image: url(img/home/maha.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	animation: translate-x 5s;
-	background-size: cover;
-}
-.home-4{
-	background-image: url(img/home/women.png);
-	background-repeat: no-repeat;
-	animation: rot 3s;
-	background-size: cover;
-}
 
-.obj-s{
-	background-image: url(img/home/sabong.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	animation: rotg 3s infinite;
-	animation-direction: alternate;
-	transition: all .5s;
-	background-size: cover;
-}
-.obj-s2{
-	background-image: url(img/home/maha-s.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.obj-s3{
-	background-image: url(img/home/leave.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	animation: wind 5s infinite;
-	transition: all .5s;
-	background-size: cover;
-}
-
-.obj-h{
-	background-image: url(img/home/obj-h.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	animation: obj-scl 1s infinite alternate;
-	transition: all .5s;
-	background-size: cover;
-}
-
-.obj-m{
-	background-image: url(img/home/1-m.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	transition: all .5s;
-	background-size: cover;
-	position: relative;
-	right: 27%;
-}
-.obj-m2{
-	background-image: url(img/home/2-m.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	animation: translate-x 2s;
-	transition: all .5s;
-	background-size: cover;
-}
-.obj-m3{
-	background-image: url(img/home/3-m.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	animation: translate-x 3s;
-	transition: all .5s;
-	background-size: cover;
-}
-
-.obj-a{
-	background-image: url(img/home/obj-a.png);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	animation: obj-scl 1s infinite alternate ;
-	transition: all .5s;
-	background-size: cover;
-
-}
 
 
 /*mobile*/
@@ -298,6 +208,84 @@ a{
 	.object{
 		width: 100%;
 		height: 30vh;
+	}
+	.home-2{
+		background-image: url(img/home/star.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: opa 2s infinite;
+		animation-direction: alternate;
+	}
+	.home-3{
+		background-image: url(img/home/maha.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: translate-x 5s;
+	}
+	.home-4{
+		background-image: url(img/home/women.png);
+		background-repeat: no-repeat;
+		animation: rot 3s;
+	}
+
+	.obj-s{
+		background-image: url(img/home/sabong.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: rotg 3s infinite;
+		animation-direction: alternate;
+		transition: all .5s;
+	}
+	.obj-s2{
+		background-image: url(img/home/maha-s.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.obj-s3{
+		background-image: url(img/home/leave.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: wind 5s infinite;
+		transition: all .5s;
+	}
+
+	.obj-h{
+		background-image: url(img/home/obj-h.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: obj-scl 1s infinite alternate;
+		transition: all .5s;
+	}
+
+	.obj-m{
+		background-image: url(img/home/1-m.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		transition: all .5s;
+		position: relative;
+		right: 27%;
+	}
+	.obj-m2{
+		background-image: url(img/home/2-m.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: translate-x 2s;
+		transition: all .5s;
+	}
+	.obj-m3{
+		background-image: url(img/home/3-m.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: translate-x 3s;
+		transition: all .5s;
+	}
+
+	.obj-a{
+		background-image: url(img/home/obj-a.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: obj-scl 1s infinite alternate ;
+		transition: all .5s;
 	}
 	#divLogo{
 		width: 70px;
@@ -328,22 +316,13 @@ a{
 		font-size: 1.5em;
 		margin-top: 30px;
 	}
-	#clickMe{
-		height: 30vh;
-		width: 100%;
-		position: absolute;
-		top: 50%;
-		left: 0;
-		z-index: 5;
-	}
 	#homepage{
 		width: 100%;
 		background-repeat: no-repeat;
 		overflow: hidden;
 		display: flex;
 		align-self: flex-end;
-	}
-	
+	}	
 	#obj{
 		position: absolute;
 
@@ -491,6 +470,96 @@ a{
 		width: 100%;
 		height: 100vh;
 	}
+	.home-2{
+		background-image: url(img/home/star.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: opa 2s infinite;
+		animation-direction: alternate;
+		background-size: cover;
+	}
+	.home-3{
+		background-image: url(img/home/maha.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: translate-x 5s;
+		background-size: cover;
+	}
+	.home-4{
+		background-image: url(img/home/women.png);
+		background-repeat: no-repeat;
+		animation: rot 3s;
+		background-size: cover;
+	}
+
+	.obj-s{
+		background-image: url(img/home/sabong.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: rotg 3s infinite;
+		animation-direction: alternate;
+		transition: all .5s;
+		background-size: cover;
+	}
+	.obj-s2{
+		background-image: url(img/home/maha-s.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.obj-s3{
+		background-image: url(img/home/leave.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: wind 5s infinite;
+		transition: all .5s;
+		background-size: cover;
+	}
+
+	.obj-h{
+		background-image: url(img/home/obj-h.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: obj-scl 1s infinite alternate;
+		transition: all .5s;
+		background-size: cover;
+	}
+
+	.obj-m{
+		background-image: url(img/home/1-m.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		transition: all .5s;
+		background-size: cover;
+		position: relative;
+		right: 27%;
+	}
+	.obj-m2{
+		background-image: url(img/home/2-m.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: translate-x 2s;
+		transition: all .5s;
+		background-size: cover;
+	}
+	.obj-m3{
+		background-image: url(img/home/3-m.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: translate-x 3s;
+		transition: all .5s;
+		background-size: cover;
+	}
+
+	.obj-a{
+		background-image: url(img/home/obj-a.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: obj-scl 1s infinite alternate ;
+		transition: all .5s;
+		background-size: cover;
+
+	}
 	#divLogo{
 		padding-top: 20px;
 		padding-left: 20px;
@@ -508,14 +577,6 @@ a{
 	#caption{
 		width: 70%;
 	}
-	#clickMe{
-		height: 70vh;
-		width: 70%;
-		position: absolute;
-		top: 20%;
-		left: 30%;
-	}
-
 	#homepage{
 		width: 100%;
 		top: 0px;
