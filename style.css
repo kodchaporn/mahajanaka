@@ -415,19 +415,15 @@ a{
 		position: absolute;
 		display: inline-box;
 	}
-	.a-img{
-		width: 100%;
-	}
 	.a-innerContent{
 		width: 100%;
 	}
-	#a_img{
-		width: 40%;
-	}
 	.a-content{
-    	padding: 20px;
-    	top: 55px;
-    	position: relative;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 85px;
 	}
 	.mobile-width{
 		width: 100%;
