@@ -335,11 +335,6 @@ a{
 		position: relative;
 		bottom: 0%;
 	}
-
-	.h_imgContent{
-		width: 100%;
-	}
-
 	.h-menu{
 		background-color: white;
 		border: 1px #099690;
@@ -417,6 +412,9 @@ a{
 	}
 	.a-innerContent{
 		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.a-content{
 		padding: 20px;
@@ -425,10 +423,9 @@ a{
 		align-items: center;
 		padding-top: 85px;
 	}
-	.mobile-width{
-		width: 100%;
-	}
-	.s-content{
+	.header{
+		font-size: 2.3em !important;
+	}	.s-content{
 		padding: 10px;
 	}
 	img{
