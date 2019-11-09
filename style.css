@@ -168,13 +168,13 @@ a{
 @media only screen and (max-width: 812px) {
 	#obj{
 		width: 100%;
-		height: 50vh;
-		display: flex;
-		align-self: flex-end;
-		flex-flow: column wrap;
-		justify-content: space-around;
-		align-items: flex-start;
-		align-self: flex-end;
+		height: 30vh;
+		/*display: flex;*/
+		/*align-self: flex-end;*/
+		/*flex-flow: column wrap;*/
+		/*justify-content: space-around;*/
+		/*align-items: flex-start;*/
+		/*align-self: flex-end;*/
 	}
 	#divLogo{
 		/*background-color: white;*/
@@ -202,12 +202,17 @@ a{
 	li{
 		list-style-type: none;
 	}
-	#caption{
+	/*#caption{
 		position: fixed;
 		bottom: 0%;
 		padding: 20px;
 		padding-left: 30px;
 		text-align: center;
+
+	}*/
+	#captionText{
+		font-size: 1.5em;
+		margin-top: 30px;
 	}
 	#clickMe{
 		height: 30vh;
@@ -398,6 +403,7 @@ a{
 		background: #099690;
 		padding: 30px;
 		text-align: center;
+		color: white;
 	}
 	.a-footer{
 		margin-left: 0;
@@ -435,8 +441,13 @@ a{
 	#hamburger{
 		display: none;
 	}
+	#captionText{
+		margin-top: 30px;
+		/*padding: 20px;*/
+	}
 	#caption{
-		padding: 30px;
+		width: 65%;
+		/*background: white;*/
 	}
 	/*#home_inner_menu{
 		position: relative;
@@ -512,7 +523,7 @@ a{
 	}
 
 	.h-menu{
-		width: 25%;
+		width: 24%;
 		height: 100vh;
 		padding: 30px;
 		position: fixed;
@@ -527,11 +538,12 @@ a{
 	.h-content{
 		/*width: 80%;*/
 		padding: 20px;
-		margin-top: 45px;
-		margin-left: 33%;
+		/*margin-top: 45px;*/
+		margin-left: 25%;
 		/*height: 100vh;*/
 		/*position: relative;*/
 		/*top: 100px;*/
+		padding-top: 55px;
 
 	}
 	.m-1{
@@ -606,10 +618,11 @@ a{
 	}
 	#backHome{
 		padding-left: 50px;
-		padding-top: 20px;
-		position: absolute;
-		left: 30px;
+		/*padding-top: 20px;*/
+		/*position: absolute;*/
+		/*left: 30px;*/
 		top: 80%;
+		position: fixed;
 	}
 	.artistName{
 		/*background-color: red;*/
@@ -658,8 +671,10 @@ a{
 	.a-content{
     	padding: 20px;
     	top: 55px;
+    	/*margin-top: 50px;*/
     	position: relative;
-    	margin-left: 30%;
+    	margin-left: 25%;
+    	height: 80vh;
     	/*display: inline-block;*/
 	}
 	.s-content{
@@ -674,8 +689,9 @@ a{
 	position: relative;
 	bottom: 0%;
 	margin-top: 5%;
-	margin-left: 30%;
+	/*margin-left: 30%;*/
 	/*width: 100%;*/
+	color: white;
 	}
 	.a-footer{
 	background: #099690;
@@ -685,7 +701,8 @@ a{
 	position: relative;
 	bottom: 0%;
 	margin-top: 15%;
-	margin-left: 30%;
+	/*margin-left: 30%;*/
+	color: white;
 }
 
 }
