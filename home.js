@@ -5,36 +5,37 @@ function toHomepage(){
 	obj.classList.add("home-2");
 	obj2.classList.add("home-4");
 	obj3.classList.add("home-3");
+	btn.classList.add("setDisplay");
 }
 
 document.getElementById("m_story").onclick = function() {clickStory()};
 
 function clickStory() {
 	clearClick();
+	btn.classList.remove("setDisplay");
 	homepage.classList.add("story");
 	obj.classList.add("obj-s");
-	obj.classList.add("obj-scale");
 	obj2.classList.add("obj-s2");
 	obj3.classList.add("obj-s3");
 	m_story.classList.add("clickMenu");
 	m_story.classList.add("lightGreen");
 	captionText.innerText = "“เรื่องย่อพระราชนิพนธ์พระมหาชนกของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช”";
 	captionText.classList.add("lightGreen");
-	obj.addEventListener("click", goIntoStory);
+	btn.addEventListener("click", goIntoStory);
 }
 
 document.getElementById("m_history").onclick = function() {clickHistory()};
 
 function clickHistory() {
 	clearClick();
+	btn.classList.remove("setDisplay");
 	homepage.classList.add("history");
 	obj.classList.add("obj-h");
-	obj.classList.add("obj-scale");
 	m_history.classList.add("clickMenu");
 	m_history.classList.add("lightOrange");
 	captionText.classList.add("lightOrange");
 	captionText.innerText = "“ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก และผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช”";
-	obj.addEventListener("click", goIntoHistory);
+	btn.addEventListener("click", goIntoHistory);
 
 }
 
@@ -42,30 +43,30 @@ document.getElementById("m_media").onclick = function() {clickMedia()};
 
 function clickMedia() {
 	clearClick();
+	btn.classList.remove("setDisplay");
 	homepage.classList.add("media");
 	obj.classList.add("obj-m");
-	// obj.classList.add("obj-scale");
 	obj2.classList.add("obj-m2");
 	obj3.classList.add("obj-m3");
 	m_media.classList.add("clickMenu");
 	m_media.classList.add("darkOrange");
 	captionText.classList.add("darkOrange");
 	captionText.innerText = "“ผลงานฉบับตีพิมพ์ ผลงานการ์ตูน และ แอนิเมชั่น”";
-	obj3.addEventListener("click", goIntoMedia);
+	btn.addEventListener("click", goIntoMedia);
 }
 
 document.getElementById("m_artist").onclick = function() {clickArtist()};
 
 function clickArtist() {
 	clearClick();
+	btn.classList.remove("setDisplay");
 	homepage.classList.add("artist");
 	obj.classList.add("obj-a");
-	obj.classList.add("obj-scale");
 	m_artist.classList.add("clickMenu");
 	m_artist.classList.add("green");
 	captionText.classList.add("green");
 	captionText.innerText = "“คลังภาพรวบรวมศิลปินที่ถวายผลงานภาพประกอบพระราชนิพนธ์พระมหาชนก”";
-	obj3.addEventListener("click", goIntoArtist);
+	btn.addEventListener("click", goIntoArtist);
 }
 
 function clearClick(){
