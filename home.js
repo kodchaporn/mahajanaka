@@ -20,7 +20,7 @@ function clickStory() {
 	obj3.classList.add("obj-s3");
 	m_story.classList.add("clickMenu");
 	m_story.classList.add("lightGreen");
-	captionText.innerText = "“เรื่องย่อพระราชนิพนธ์พระมหาชนกของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช”";
+	captionText.innerText = "“เรื่องย่อพระราชนิพนธ์"+"\n"+"พระมหาชนกของพระบาทสมเด็จ"+"\n"+"พระปรมินทรมหาภูมิพลอดุลเดช”";
 	captionText.classList.add("lightGreen");
 	btn.addEventListener("click", goIntoStory);
 }
@@ -36,7 +36,7 @@ function clickHistory() {
 	m_history.classList.add("clickMenu");
 	m_history.classList.add("lightOrange");
 	captionText.classList.add("lightOrange");
-	captionText.innerText = "“ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก และผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดช”";
+	captionText.innerText = "“ประวัติความเป็นมาของพระราชนิพนธ์"+"\n"+"พระมหาชนกและผลงานการประพันธ์ของ"+"\n"+"พระบาทสมเด็จพระปรมินทร-"+"\n"+"มหาภูมิพลอดุลเดช”";
 	btn.addEventListener("click", goIntoHistory);
 
 }
@@ -69,7 +69,7 @@ function clickArtist() {
 	m_artist.classList.add("clickMenu");
 	m_artist.classList.add("green");
 	captionText.classList.add("green");
-	captionText.innerText = "“คลังภาพรวบรวมศิลปินที่ถวายผลงานภาพประกอบพระราชนิพนธ์พระมหาชนก”";
+	captionText.innerText = "“คลังภาพรวบรวมศิลปินที่ถวายผลงาน"+"\n"+"ภาพประกอบพระราชนิพนธ์พระมหาชนก”";
 	btn.addEventListener("click", goIntoArtist);
 }
 
