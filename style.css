@@ -117,6 +117,14 @@ a{
 	from{transform: rotate(10deg);}
 	to{transform: rotate(0deg);}
 }
+@keyframes pen{
+	from{transform: translateY(100px);}
+	to{transform: translateY(0px);}
+}
+@keyframes book{
+	from{transform: translateX(10px);transform: translateY(0px);}
+	to{transform: translateX(0px);transform: translateY(10px);}
+}
 
 
 .darkGreen{
@@ -172,7 +180,7 @@ a{
 }
 
 .history{
-	background-image: url(img/home/history.jpg);
+	background-image: url(img/home/history.png);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	z-index: 1;
@@ -492,12 +500,6 @@ a{
 		animation: rot 3s;
 		background-size: cover;
 	}
-	.home-5{
-		background-image: url(img/home/wave1.png);
-		background-repeat: no-repeat;
-		/*animation: rot 3s;*/
-		background-size: cover;
-	}
 
 	.obj-s{
 		background-image: url(img/home/sabong.png);
@@ -524,10 +526,29 @@ a{
 	}
 
 	.obj-h{
-		background-image: url(img/home/obj-h.png);
+		background-image: url(img/home/pen.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: obj-scl 1s infinite alternate;
+		animation: pen 2s;
+		transition: all .5s;
+		background-size: cover;
+	}
+
+	.obj-h2{
+		background-image: url(img/home/king.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: rot 2s;
+		transition: all .5s;
+		background-size: cover;
+	}
+
+	.obj-h3{
+		background-image: url(img/home/book.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: book 1s infinite;
+		animation-direction: alternate;
 		transition: all .5s;
 		background-size: cover;
 	}
@@ -559,13 +580,20 @@ a{
 	}
 
 	.obj-a{
-		background-image: url(img/home/obj-a.png);
+		background-image: url(img/home/artbg.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: obj-scl 1s infinite alternate ;
+		animation: opa 3s infinite alternate ;
 		transition: all .5s;
 		background-size: cover;
-
+	}
+	.obj-a2{
+		background-image: url(img/home/art.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: opa 5s;
+		transition: all .5s;
+		background-size: cover;
 	}
 	#divLogo{
 		/*padding-top: 20px;*/

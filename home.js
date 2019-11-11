@@ -33,6 +33,8 @@ function clickHistory() {
 	btn.classList.add("lightOrange-b");
 	homepage.classList.add("history");
 	obj.classList.add("obj-h");
+	obj2.classList.add("obj-h2");
+	obj3.classList.add("obj-h3");
 	m_history.classList.add("clickMenu");
 	m_history.classList.add("lightOrange");
 	captionText.classList.add("lightOrange");
@@ -66,6 +68,7 @@ function clickArtist() {
 	btn.classList.add("green-b");
 	homepage.classList.add("artist");
 	obj.classList.add("obj-a");
+	obj2.classList.add("obj-a2");
 	m_artist.classList.add("clickMenu");
 	m_artist.classList.add("green");
 	captionText.classList.add("green");
@@ -93,6 +96,8 @@ function clearClick(){
 	homepage.classList.remove("media");
 	homepage.classList.remove("artist");
 	obj.classList.remove("obj-h");
+	obj2.classList.remove("obj-h2");
+	obj3.classList.remove("obj-h3");
 	obj.classList.remove("obj-s");
 	obj2.classList.remove("obj-s2");
 	obj3.classList.remove("obj-s3");
