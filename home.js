@@ -102,6 +102,7 @@ function clearClick(){
 	obj2.classList.remove("obj-s2");
 	obj3.classList.remove("obj-s3");
 	obj.classList.remove("obj-a");
+	obj2.classList.remove("obj-a2");
 	obj.classList.remove("obj-m");
 	obj2.classList.remove("obj-m2");
 	obj3.classList.remove("obj-m3");

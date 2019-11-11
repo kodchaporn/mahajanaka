@@ -125,7 +125,10 @@ a{
 	from{transform: translateX(10px);transform: translateY(0px);}
 	to{transform: translateX(0px);transform: translateY(10px);}
 }
-
+@keyframes opa-a{
+	from{opacity: 0;transform: scale(2);}
+	to{opacity: 1;transform: scale(1);}
+}
 
 .darkGreen{
 	color: #055464;
@@ -266,12 +269,28 @@ a{
 		animation: wind 5s infinite;
 		transition: all .5s;
 	}
-
 	.obj-h{
-		background-image: url(img/home/obj-h.png);
+		background-image: url(img/home/pen.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: obj-scl 1s infinite alternate;
+		animation: pen 2s;
+		transition: all .5s;
+	}
+
+	.obj-h2{
+		background-image: url(img/home/king.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: rot 2s;
+		transition: all .5s;
+	}
+
+	.obj-h3{
+		background-image: url(img/home/book.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: book 1s infinite;
+		animation-direction: alternate;
 		transition: all .5s;
 	}
 
@@ -297,12 +316,18 @@ a{
 		animation: translate-x 3s;
 		transition: all .5s;
 	}
-
 	.obj-a{
-		background-image: url(img/home/obj-a.png);
+		background-image: url(img/home/artbg.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: obj-scl 1s infinite alternate ;
+		animation: opa 5s infinite alternate ;
+		transition: all .5s;
+	}
+	.obj-a2{
+		background-image: url(img/home/art.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		animation: opa-a 1s;
 		transition: all .5s;
 	}
 	#divLogo{
@@ -583,7 +608,7 @@ a{
 		background-image: url(img/home/artbg.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: opa 3s infinite alternate ;
+		animation: opa 5s infinite alternate ;
 		transition: all .5s;
 		background-size: cover;
 	}
@@ -591,7 +616,7 @@ a{
 		background-image: url(img/home/art.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: opa 5s;
+		animation: opa-a 1s;
 		transition: all .5s;
 		background-size: cover;
 	}
