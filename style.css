@@ -109,6 +109,12 @@ a{
 	from{top: -20%;right: -15%;}
 	to{top: 0%;right: 0%;}
 }
+
+@keyframes rotfinal{
+	from{transform: rotate(-30deg);}
+	to{transform: rotate(0deg);}
+}
+
 @keyframes wind{
 	from{top: -50%;right: -35%;}
 	to{top: 50%;right: 100%;}
@@ -118,8 +124,8 @@ a{
 	to{transform: rotate(0deg);}
 }
 @keyframes pen{
-	from{transform: translateY(100px);}
-	to{transform: translateY(0px);}
+	from{transform: translateY(100px);opacity: 0;}
+	to{transform: translateY(0px);opacity: 1;}
 }
 @keyframes book{
 	from{transform: translateX(10px);transform: translateY(0px);}
@@ -281,7 +287,7 @@ a{
 		background-image: url(img/home/king.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: rot 2s;
+		animation: rotfinal 2s;
 		transition: all .5s;
 	}
 
@@ -573,7 +579,7 @@ a{
 		background-image: url(img/home/king.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
-		animation: rot 2s;
+		animation: rotfinal 2s;
 		transition: all .5s;
 		background-size: cover;
 	}
