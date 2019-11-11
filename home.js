@@ -108,6 +108,7 @@ function clearClick(){
 	btn.classList.remove("lightGree-b");
 	btn.classList.remove("lightOrange-b");
 	btn.classList.remove("darkOrange-b");
+	btn.addEventListener("click", goIntoNo);
 }
 
 function goIntoStory(){
@@ -122,5 +123,9 @@ function goIntoMedia(){
 }
 function goIntoArtist(){
 	location.href = "artist.html";
+}
+
+function goIntoNo() {
+	location.href = "#";
 }
 
