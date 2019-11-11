@@ -6,6 +6,8 @@ body{
 h1{
 	font-family: Chonburi !important;
 	font-size: 2.5em;
+	margin: 0;
+	margin-bottom: 20px;
 }
 
 h2{
@@ -227,6 +229,11 @@ a{
 		background-repeat: no-repeat;
 		animation: rot 3s;
 	}
+	.home-5{
+		background-image: url(img/home/wave1.png);
+		background-repeat: no-repeat;
+		/*animation: rot 3s;*/
+	}
 
 	.obj-s{
 		background-image: url(img/home/sabong.png);
@@ -322,7 +329,14 @@ a{
 		overflow: hidden;
 		display: flex;
 		align-self: flex-end;
-	}	
+	}
+	/*#obj2, #obj3, #obj4{
+		position: absolute;
+		top: 0%;
+	}
+	#obj{
+		position: relative;
+	}	*/
 	#obj{
 		position: absolute;
 
@@ -473,6 +487,12 @@ a{
 		animation: rot 3s;
 		background-size: cover;
 	}
+	.home-5{
+		background-image: url(img/home/wave1.png);
+		background-repeat: no-repeat;
+		/*animation: rot 3s;*/
+		background-size: cover;
+	}
 
 	.obj-s{
 		background-image: url(img/home/sabong.png);
@@ -543,7 +563,7 @@ a{
 
 	}
 	#divLogo{
-		padding-top: 20px;
+		/*padding-top: 20px;*/
 		padding-left: 20px;
 	}
 	#menuBar{
@@ -569,17 +589,13 @@ a{
 		background-size: cover;
 		overflow: hidden;
 	}
-	#obj2{
+	#obj2, #obj3, #obj4{
 		position: absolute;
 		top: 0%;
 	}
-	#obj3{
-		position: absolute;
-		top: 0%;
+	#obj{
+		position: relative;
 	}
-
-	
-
 	.h-menu{
 		width: 24%;
 		height: 100vh;
@@ -713,7 +729,7 @@ a{
 
 .innerMenu li{
 	font-size: 1.1em;
-	padding-right: 20px;
+	padding-bottom: 10px;
 }
 
 .setBgWhite{
@@ -754,3 +770,6 @@ iframe{
 	animation:rotg .3s infinite alternate;
 }
 
+.innerMenu-home{
+	line-height: 2;
+}
