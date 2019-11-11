@@ -223,11 +223,14 @@ a{
 		background-size: 100%;
 		background-repeat: no-repeat;
 		animation: translate-x 5s;
+		/*background-size: cover;*/
 	}
 	.home-4{
 		background-image: url(img/home/women.png);
 		background-repeat: no-repeat;
+		background-size: 100%;
 		animation: rot 3s;
+		/*background-size: cover;*/
 	}
 	.home-5{
 		background-image: url(img/home/wave1.png);
@@ -327,8 +330,10 @@ a{
 		width: 100%;
 		background-repeat: no-repeat;
 		overflow: hidden;
-		display: flex;
-		align-self: flex-end;
+		position: absolute;
+    	bottom: 0%;
+		/*display: flex;
+		align-self: flex-end;*/
 	}
 	/*#obj2, #obj3, #obj4{
 		position: absolute;
@@ -338,16 +343,16 @@ a{
 		position: relative;
 	}	*/
 	#obj{
-		position: absolute;
+		/*position: absolute;*/
 
 	}
 	#obj2{
 		position: absolute;
-		bottom: 0%;
+    	bottom: 0%;
 	}
 	#obj3{
-		position: relative;
-		bottom: 0%;
+		position: absolute;
+    	bottom: 0%;
 	}
 	.h-menu{
 		background-color: white;
