@@ -15,6 +15,13 @@
 		@media only screen and (min-width: 770px) {
 			#menuBar{display: none;}
 		}
+		.paragraph{
+			transform: translate(0px, 0px);
+			transition: all .5s;
+		}
+		.paragraph.small{
+			transform: translate(0px, 100px);
+		}
 	</style>
 </head>
 <body>
@@ -55,7 +62,7 @@
 	<div class="h-content animate" id="h_content1">
 		<p class="lightOrange Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">
 		ผลงานการประพันธ์ของพระบาทสมเด็จ<br>พระปรมินทรมหาภูมิพลอดุลยเดช</p>
-		<div class="h-section" id="sec_1">
+		<div class="h-section paragraph" id="sec_1">
 			<div class="img-left">
 				<img src="img/history/kingramaix2.jpg" class="h_imgContent" id="h_img">
 			</div>
@@ -67,7 +74,7 @@
 			</div>
 		</div>
 
-		<div class="h-section reverse" id="sec_2">
+		<div class="h-section reverse paragraph" id="sec_2">
 			<div class="img-left">
 				<img src="img/history/2.jpg" class="h_imgContent">
 			</div>
@@ -83,7 +90,7 @@
 			</div>
 		</div>
 
-		<div class="h-section" id="sec_3">
+		<div class="h-section small paragraph" id="sec_3">
 			<div class="img-left">
 				<img src="img/history/3.jpg" class="h_imgContent">
 			</div>
@@ -100,7 +107,7 @@
 			</div>
 		</div>
 
-		<div class="h-section reverse" id="sec_4">
+		<div class="h-section reverse small paragraph" id="sec_4">
 			<div class="img-left">
 				<img src="img/history/4.jpg" class="h_imgContent">
 			</div>
@@ -116,7 +123,7 @@
 			</div>
 		</div>
 
-		<div class="h-section" id="sec_5">
+		<div class="h-section small paragraph" id="sec_5">
 			<div class="img-left">
 				<img src="img/history/5.jpg" class="h_imgContent">
 			</div>
@@ -129,7 +136,7 @@
 			</div>
 		</div>
 
-		<div class="h-section" id="sec_6">
+		<div class="h-section small paragraph" id="sec_6">
 			<div class="h-innerContent">
 				<p class="darkGreen baiJamjuree" id="h_innerContent">
 					<strong>นอกจากนี้ยังทรงแปลและเรียบเรียงบทความ อีกหลายเรื่องด้วยกัน</strong><br>
@@ -150,7 +157,7 @@
 
 	<div class="h-content setDisplay animate" id="h_content2">
 		<p class="lightOrange Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก</p>
-		<div class="h-section" id="sec_1">
+		<div class="h-section" id="sec_0">
 			<div class="img-left">
 				<img src="img/history/img001Re.jpg" class="h_imgContent" id="h_img">
 			</div>
@@ -169,19 +176,8 @@
 	</footer>
 
 	<script type="text/javascript">
-		// content = [
-		// {
-		// 	"i":"“นักเขียน นักประพันธ์ งานสำคัญก็คือ แสดงความคิดของตอนออกมาเป็นเรื่องชีวิต หรือเรื่องแต่งขึ้นมา เพื่อให้ผู้อื่นได้ประโยชน์ คือความรู้บ้าง บันเทิงบ้าง นักแสดงความคิดสำคัญมาก เพราะว่ามีอิทธิพลต่อชีวิตของมวลมนุษย์ อาจทำให้เกิดความคล้อยตามไปและตัวท่านเขียนดีก็ยิ่งคล้อยตามกันมาก ฉะนั้น นักประพันธ์ต้องมีความรับผิดชอบสูง เพราะท่านเป็นผู้ปั้นความคิดและความบริสุทธิ์ในความคิด จึงเป็นเรื่องที่สำคัญ ดังบทความกลั่นกรองไว้ในสมองว่า สิ่งที่จะเขียนออกมาจะไม่แสลง ไม่ทำลายความคิดของประชากร ไม่ทำลายผู้อื่น และตนเอง คือมีเสรีภาพในการเขียนอย่างเต็มที่ในขอบเขตของศีลธรรม”",
-		// 	"ii":"(พระบรมราโชวาทพระราชทานแก่คณะกรรมการสมาคมนักเขียนแห่งประเทศไทย ณ พระตำหนักจิตรลดารโหฐาน วันศุกร์ที่ ๓ พฤศจิกายน ๒๕๑๕)"
-		// },
-		// {
-		// 	"i":"พระมหาชนกเป็นเรื่องหนึ่งในทศชาติชาดก อันเป็นชาดก ๑๐ ชาติสุดท้ายก่อนที่พระโพธิสัตว์จะมาประสูติเป็นเจ้าชายสิทธัตถะ และตรัสรู้เป็นพระสัมพุทธเจ้า ชาดกเรื่องนี้เป็นการบำเพ็ญเพียรบารมี พระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลเดชทรงสนพระราชหฤทัย เนื่องจากได้ทรงสดับพระธรรมเทศนาของสมเด็จพระมหาวีรวงศ์ แห่งวัดราชผาติการาม เมื่อปีพ.ศ.๒๕๒๐ เรื่องพระมหาชนกเสด็จทอดพระเนตรพระราชอุทยานในกรุงมิถิลา จึงทรงค้นคว้าเรื่องพระมหาชนกในพระไตรปิฎกเพิ่มเติม และทรงแปลเป็นภาษาอังกฤษตรงจากมหาชนกชาดกตั้งแต่ต้นเรื่อง โดยดัดแปลงเล็กน้อยจากพระสุตตันตปิฎกขุททกนิกายชาดก เล่มที่ ๔ ภาคที่ ๒ เพื่อให้เข้าใใจง่ายขึ้น ทรงแปลพระมหาชนกชาดกเสร็จสมบูรณ์ เมื่อพ.ศ.๒๕๓๑ และโปรดเกล้าโปรดกระหม่อมให้จัดพิมพ์ในปีกาญจนาภิเษกทรงครองสิริราชสมบัติครบ ๕๐ ปี ในวันที่ ๒๘ มีนาคม ๒๕๓๙ และได้มีการพิมพ์เป็นฉบับการ์ตูน ในปีพ.ศ.๒๕๔๒",
-		// }
-		// ];
-
 		h_menu1.addEventListener("click", clickContent1);
 		h_menu2.addEventListener("click", clickContent2);
-		// let chkHeight = window.innerHeight;
 		
 		function clickContent1(){
 			h_menu2.classList.remove("lightOrange");
@@ -190,14 +186,6 @@
 			h_menu1.classList.add("clickMenu");
 			h_content2.classList.add("setDisplay");
 			h_content1.classList.remove("setDisplay");
-			// h_img.src = "img/history/KingRe.jpg";
-			// h_innerHead.innerText = "ผลงานการประพันธ์ของพระบาทสมเด็จพระปรมินทรมหาภูมิพลอดุลยเดช";
-			// h_innerContent_sec1.innerHTML = content[0].i + '<br><br>' + content[0].ii;
-			// sec_2.classList.remove("setDisplay");
-			// sec_3.classList.remove("setDisplay");
-			// sec_4.classList.remove("setDisplay");
-			// sec_5.classList.remove("setDisplay");
-			// sec_6.classList.remove("setDisplay");
 			inner_menu.classList.remove("show-menu");
 			hbg.classList.remove("fa-times");
 			hbg.classList.add("fa-bars");
@@ -206,21 +194,12 @@
 		}
 		
 		function clickContent2(){
-			// sec_1.classList.remove("sec1");
 			h_menu1.classList.remove("lightOrange");
 			h_menu1.classList.remove("clickMenu");
 			h_menu2.classList.add("lightOrange");
 			h_menu2.classList.add("clickMenu");
 			h_content2.classList.remove("setDisplay");
 			h_content1.classList.add("setDisplay");
-			// h_innerHead.innerText = "ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก";
-			// h_innerContent_sec1.innerText = content[1].i;
-			// h_img.src = "img/history/img001Re.jpg";
-			// sec_2.classList.add("setDisplay");
-			// sec_3.classList.add("setDisplay");
-			// sec_4.classList.add("setDisplay");
-			// sec_5.classList.add("setDisplay");
-			// sec_6.classList.add("setDisplay");
 			inner_menu.classList.remove("show-menu");
 			hbg.classList.remove("fa-times");
 			hbg.classList.add("fa-bars");
@@ -258,9 +237,56 @@
 				head_m2.classList.remove("setDisplay");
 			}
 		}
-		
+		window.addEventListener("scroll", ppp);
+		function ppp(){
+			let pp1 = sec_1.getBoundingClientRect();
+			if (pp1.top < window.innerHeight && pp1.bottom > 0) {
+				sec_1.classList.remove('small');
+			}
+			else {
+				sec_1.classList.add('small');
+			}
 
-		
+			let pp2 = sec_2.getBoundingClientRect();
+			if (pp2.top < window.innerHeight && pp2.bottom > 0) {
+				sec_2.classList.remove('small');
+			}
+			else {
+				sec_2.classList.add('small');
+			}
+
+			let pp3 = sec_3.getBoundingClientRect();
+			if (pp3.top < window.innerHeight && pp3.bottom > 0) {
+				sec_3.classList.remove('small');
+			}
+			else {
+				sec_3.classList.add('small');
+			}
+
+			let pp4 = sec_4.getBoundingClientRect();
+			if (pp4.top < window.innerHeight && pp4.bottom > 0) {
+				sec_4.classList.remove('small');
+			}
+			else {
+				sec_4.classList.add('small');
+			}
+
+			let pp5 = sec_5.getBoundingClientRect();
+			if (pp5.top < window.innerHeight && pp5.bottom > 0) {
+				sec_5.classList.remove('small');
+			}
+			else {
+				sec_5.classList.add('small');
+			}
+
+			let pp6 = sec_6.getBoundingClientRect();
+			if (pp5.top < window.innerHeight && pp6.bottom > 0) {
+				sec_6.classList.remove('small');
+			}
+			else {
+				sec_6.classList.add('small');
+			}
+		}	
 
 		function toHomepage(){
 			location.href = "index.html";
