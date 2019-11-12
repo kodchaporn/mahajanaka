@@ -653,6 +653,7 @@ a{
 	#captionText{
 		font-size: 12pt;
 		margin-top: 30px;
+		text-align: center;
 	}
 	#caption{
 		width: 70%;
