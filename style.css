@@ -693,6 +693,12 @@ a{
 		margin-left: 27%;
 		padding-top: 55px;
 	}
+	.h-content1{
+		padding: 20px;
+		margin-left: 27%;
+		padding-top: 55px;
+		height: 100vh;
+	}
 	.m-1{
 		height: 85vh;	
 	}
@@ -765,6 +771,7 @@ a{
     	position: relative;
     	margin-left: 25%;
     	height: 85vh;
+    	margin-top: 5%;
 	}
 	.s-content{
 		line-height: 2em;
@@ -777,7 +784,7 @@ a{
 	background: #099690;
 	position: relative;
 	bottom: 0%;
-	margin-top: 5%;
+	/*margin-top: 12%;*/
 	color: white;
 	}
 	/*.a-footer{
