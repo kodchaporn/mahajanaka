@@ -56,7 +56,7 @@ function clickMedia() {
 	m_media.classList.add("clickMenu");
 	m_media.classList.add("darkOrange");
 	captionText.classList.add("darkOrange");
-	captionText.innerText = "“ผลงานฉบับตีพิมพ์ ผลงานการ์ตูนและแอนิเมชั่น”";
+	captionText.innerText = "“ผลงานฉบับตีพิมพ์ ผลงานการ์ตูน"+"\n"+"และแอนิเมชั่น”";
 	abtn.href = "media.html";
 }
 
