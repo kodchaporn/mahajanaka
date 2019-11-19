@@ -116,22 +116,3 @@ function clearClick(){
 	btn.classList.remove("darkOrange-b");
 	abtn.href = "#";
 }
-
-/*function goIntoStory(){
-	location.href = "story.html";
-}
-
-function goIntoHistory(){
-	location.href = "history.html";
-}
-function goIntoMedia(){
-	location.href = "media.html";
-}
-function goIntoArtist(){
-	location.href = "artist.html";
-}
-
-function goIntoNo() {
-	location.href = "#";
-}*/
-
