@@ -232,6 +232,9 @@ a{
 
 /*mobile*/
 @media only screen and (max-width: 812px) {
+	.setTextCenter{
+		text-align: center;
+	}
 	.object{
 		width: 100%;
 		height: 30vh;
@@ -544,6 +547,23 @@ a{
 	}
 	.mobile-btn{
 		text-align: center;
+	}
+	/*.media-1{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.displayFlex{
+		display: flex;
+	}
+	.order-1{
+		order: 1;
+	}
+	.order-2{
+		order: 2;
+	}*/
+	hr{
+		border: 0.2px solid gray;
 	}
 }
 /*desktop*/
@@ -895,3 +915,4 @@ iframe{
 .innerMenu-home{
 	line-height: 2;
 }
+
