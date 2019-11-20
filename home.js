@@ -6,12 +6,20 @@ function toHomepage(){
 	obj2.classList.add("home-4");
 	obj3.classList.add("home-3");
 	btn.classList.add("setDisplay");
+	m_story.classList.add("yellow");
+	m_history.classList.add("yellow");
+	m_media.classList.add("yellow");
+	m_artist.classList.add("yellow");
 }
 
 document.getElementById("m_story").onclick = function() {clickStory()};
 
 function clickStory() {
 	clearClick();
+	m_story.classList.remove("yellow");
+	m_history.classList.remove("yellow");
+	m_media.classList.remove("yellow");
+	m_artist.classList.remove("yellow");
 	btn.classList.remove("setDisplay");
 	btn.classList.add("lightGreen-b");
 	homepage.classList.add("story");
@@ -20,7 +28,7 @@ function clickStory() {
 	obj3.classList.add("obj-s3");
 	m_story.classList.add("clickMenu");
 	m_story.classList.add("lightGreen");
-	captionText.innerText = "“เรื่องย่อพระราชนิพนธ์"+"\n"+"พระมหาชนกของพระบาทสมเด็จ"+"\n"+"พระปรมินทรมหาภูมิพลอดุลเดช”";
+	captionText.innerText = "“เรื่องย่อพระราชนิพนธ์"+"\n"+"พระมหาชนกของ"+"\n"+"พระบาทสมเด็จพระปรมินทร-"+"\n"+"มหาภูมิพลอดุลเดช”";
 	captionText.classList.add("lightGreen");
 	abtn.href = "story.html";
 }
@@ -29,6 +37,10 @@ document.getElementById("m_history").onclick = function() {clickHistory()};
 
 function clickHistory() {
 	clearClick();
+	m_story.classList.add("yellow");
+	m_history.classList.remove("yellow");
+	m_media.classList.add("yellow");
+	m_artist.classList.add("yellow");
 	btn.classList.remove("setDisplay");
 	btn.classList.add("lightOrange-b");
 	homepage.classList.add("history");
@@ -38,7 +50,7 @@ function clickHistory() {
 	m_history.classList.add("clickMenu");
 	m_history.classList.add("lightOrange");
 	captionText.classList.add("lightOrange");
-	captionText.innerText = "“ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนกและผลงานการประพันธ์ของ"+"\n"+"พระบาทสมเด็จพระปรมินทร-"+"\n"+"มหาภูมิพลอดุลเดช”";
+	captionText.innerText = "“ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก"+"\n"+"และผลงานการประพันธ์ของ"+"\n"+"พระบาทสมเด็จพระปรมินทร-"+"\n"+"มหาภูมิพลอดุลเดช”";
 	abtn.href = "history.html";
 
 }
@@ -47,6 +59,10 @@ document.getElementById("m_media").onclick = function() {clickMedia()};
 
 function clickMedia() {
 	clearClick();
+	m_story.classList.remove("yellow");
+	m_history.classList.remove("yellow");
+	m_media.classList.remove("yellow");
+	m_artist.classList.remove("yellow");
 	btn.classList.remove("setDisplay");
 	btn.classList.add("darkOrange-b");
 	homepage.classList.add("media");
@@ -56,7 +72,7 @@ function clickMedia() {
 	m_media.classList.add("clickMenu");
 	m_media.classList.add("darkOrange");
 	captionText.classList.add("darkOrange");
-	captionText.innerText = "“ผลงานฉบับตีพิมพ์ ผลงานการ์ตูน"+"\n"+"และแอนิเมชั่น”";
+	captionText.innerText = "“ผลงานฉบับตีพิมพ์ ผลงานการ์ตูนและแอนิเมชั่น”";
 	abtn.href = "media.html";
 }
 
@@ -64,6 +80,10 @@ document.getElementById("m_artist").onclick = function() {clickArtist()};
 
 function clickArtist() {
 	clearClick();
+	m_story.classList.remove("yellow");
+	m_history.classList.remove("yellow");
+	m_media.classList.remove("yellow");
+	m_artist.classList.remove("yellow");
 	btn.classList.remove("setDisplay");
 	btn.classList.add("green-b");
 	homepage.classList.add("artist");

@@ -63,6 +63,12 @@
 		
 	</div>
 
+	<div id="toTop" class="setDisplay">
+		<a class="goTop" onclick="scrollToTop()">
+			<i class="fa fa-chevron-circle-up lightGreen" style="font-size:48px"></i>
+		</a>
+	</div>
+
 	<div class="h-content animate" id="m_content1">
 		<p class="lightGreen Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">เนื้อเรื่อง<br>พระมหาชนก</p>
 		<img src="img/story/11.png" class="paragraph" id="img1">
@@ -124,11 +130,16 @@
 			hbg.classList.toggle("darkOrange");
 		}
 
+		function scrollToTop(){
+			window.scrollTo(0, 0);
+		}
+
 		window.onload = chkSize();
 		function chkSize(){
 			if (screen.width < 812) {
 				head_m1.classList.remove("setDisplay");
 				head_m1.classList.add("lightGreen");
+				toTop.classList.remove("setDisplay");
 			}
 		}
 
@@ -140,8 +151,10 @@
 				head_m1.classList.add("setDisplay");
 				m3.classList.add("setDisplay");
 				m4.classList.add("setDisplay");
+				toTop.classList.add("setDisplay");
 			}else{
 				head_m2.classList.remove("setDisplay");
+				toTop.classList.remove("setDisplay");
 			}
 		}
 

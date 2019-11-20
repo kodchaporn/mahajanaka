@@ -57,6 +57,12 @@
 			
 		</div>		
 	</div>
+
+	<div id="toTop" class="setDisplay">
+		<a class="goTop" onclick="scrollToTop()">
+			<i class="fa fa-chevron-circle-up lightGreen" style="font-size:48px"></i>
+		</a>
+	</div>
 	
 	<div class="a-content a a-animate" id="a_content1">
 		<div class="a-img">
@@ -391,6 +397,7 @@
 				// mobile
 				head_m4.classList.remove("setDisplay");
 				head_m4.classList.add("green");
+				toTop.classList.remove("setDisplay");
 			}
 		}
 
@@ -403,13 +410,19 @@
 				m2.classList.add("setDisplay");
 				m3.classList.add("setDisplay");
 				head_m4.classList.add("setDisplay");
+				toTop.classList.add("setDisplay");
 			}else{
 				head_m4.classList.remove("setDisplay");
+				toTop.classList.remove("setDisplay");
 			}
 		}
 
 		function toHomepage(){
 			location.href = "index.html";
+		}
+
+		function scrollToTop(){
+			window.scrollTo(0, 0);
 		}
 	</script>
 

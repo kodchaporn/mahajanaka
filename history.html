@@ -59,6 +59,12 @@
 
 	</div>
 
+	<div id="toTop" class="setDisplay">
+		<a class="goTop" onclick="scrollToTop()">
+			<i class="fa fa-chevron-circle-up lightGreen" style="font-size:48px"></i>
+		</a>
+	</div>
+
 	<div class="h-content animate" id="h_content1">
 		<p class="lightOrange Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">
 		ผลงานการประพันธ์ของพระบาทสมเด็จ<br>พระปรมินทรมหาภูมิพลอดุลยเดช</p>
@@ -222,6 +228,7 @@
 			if (screen.width < 812) {
 				head_m2.classList.remove("setDisplay");
 				head_m2.classList.add("lightOrange");
+				toTop.classList.remove("setDisplay");
 			}
 		}
 
@@ -233,8 +240,10 @@
 				head_m2.classList.add("setDisplay");
 				m3.classList.add("setDisplay");
 				m4.classList.add("setDisplay");
+				toTop.classList.add("setDisplay");
 			}else{
 				head_m2.classList.remove("setDisplay");
+				toTop.classList.remove("setDisplay");
 			}
 		}
 		window.addEventListener("scroll", ppp);
@@ -290,6 +299,10 @@
 
 		function toHomepage(){
 			location.href = "index.html";
+		}
+
+		function scrollToTop(){
+			window.scrollTo(0, 0);
 		}
 	</script>
 

@@ -51,6 +51,12 @@
 		</div>			
 		
 	</div>
+
+	<div id="toTop" class="setDisplay">
+		<a class="goTop" onclick="scrollToTop()">
+			<i class="fa fa-chevron-circle-up lightGreen" style="font-size:48px"></i>
+		</a>
+	</div>
 	
 	<div class="h-content m-1 animate" id="m_content1">
 		<p class="darkOrange Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">พระมหาชนกฉบับตีพิมพ์</p>
@@ -203,6 +209,7 @@
 				// mobile
 				head_m3.classList.remove("setDisplay");
 				head_m3.classList.add("darkOrange");
+				toTop.classList.remove("setDisplay");
 			}
 		}
 
@@ -215,13 +222,19 @@
 				m2.classList.add("setDisplay");
 				m4.classList.add("setDisplay");
 				head_m3.classList.add("setDisplay");
+				toTop.classList.add("setDisplay");
 			}else{
 				head_m3.classList.remove("setDisplay");
+				toTop.classList.remove("setDisplay");
 			}
 		}
 
 		function toHomepage(){
 			location.href = "index.html";
+		}
+
+		function scrollToTop(){
+			window.scrollTo(0, 0);
 		}
 	</script>
 
