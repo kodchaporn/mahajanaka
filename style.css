@@ -519,10 +519,6 @@ a{
 		bottom: 2em;
 		z-index: 1;
 	}
-	#caption{
-		padding-left: 60px;
-		padding-right: 60px;
-	}
 	.mobile-btn{
 		text-align: center;
 	}
