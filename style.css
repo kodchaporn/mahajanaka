@@ -397,6 +397,7 @@ a{
 		height: 70px;
 		position: fixed;
 		z-index: 4;
+		top: 0%;
 	}
 
 	#h-history{
