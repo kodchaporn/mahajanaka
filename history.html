@@ -64,10 +64,11 @@
 			<i class="fa fa-chevron-circle-up lightGreen" style="font-size:48px"></i>
 		</a>
 	</div>
-
-	<p class="lightOrange Winter header setTextCenter setDisplay" id="history_head" style="letter-spacing: 2px;padding-top: 100px;"><strong>HISTORY</strong></p>
+	
 
 	<div class="h-content animate " id="h_content1">
+		<img src="img/history/page1.png" class="boat">
+		<p class="lightOrange Winter header setTextCenter setDisplay" id="history_head" style="letter-spacing: 2px;padding-bottom: 30px;"><strong>HISTORY</strong></p>
 		<p class="lightOrange Srinakharinwirot header setTextCenter" id="h_innerHead" style="letter-spacing: 2px; padding-bottom: 30px;">
 		ผลงานการประพันธ์ของพระบาทสมเด็จ<br>พระปรมินทรมหาภูมิพลอดุลยเดช</p>
 		<div class="h-section paragraph" id="sec_1">
@@ -164,6 +165,7 @@
 	</div>
 
 	<div class="h-content1 setDisplay animate" id="h_content2">
+		<p class="lightOrange Winter header setTextCenter setDisplay" id="history_head2" style="letter-spacing: 2px;padding-top: 60px;padding-bottom: 30px;"><strong>HISTORY</strong></p>
 		<p class="lightOrange Srinakharinwirot header setTextCenter" id="h_innerHead" style="letter-spacing: 2px; padding-bottom: 30px;">ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก</p>
 		<div class="h-section" id="sec_0">
 			<div class="img-left">
@@ -177,6 +179,7 @@
 				</p>
 			</div>
 		</div>
+		<img src="img/history/bottom.png" class="tree">
 	</div>
 
 	
@@ -232,6 +235,7 @@
 				head_m2.classList.add("lightOrange");
 				toTop.classList.remove("setDisplay");
 				history_head.classList.remove("setDisplay");
+				history_head2.classList.remove("setDisplay");
 			}
 		}
 
@@ -245,10 +249,12 @@
 				m4.classList.add("setDisplay");
 				toTop.classList.add("setDisplay");
 				history_head.classList.add("setDisplay");
+				history_head2.classList.add("setDisplay");
 			}else{
 				head_m2.classList.remove("setDisplay");
 				toTop.classList.remove("setDisplay");
 				history_head.classList.remove("setDisplay");
+				history_head2.classList.remove("setDisplay");
 			}
 		}
 		window.addEventListener("scroll", ppp);

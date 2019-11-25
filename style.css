@@ -708,7 +708,7 @@ a{
 	.h-content{
 		padding: 20px;
 		margin-left: 27%;
-		padding-top: 55px;
+		/*padding-top: 55px;*/
 	}
 	.h-content1{
 		padding: 20px;
@@ -717,7 +717,7 @@ a{
 		height: 100vh;
 	}
 	.m-1{
-		height: 85vh;	
+		height: 120vh;	
 	}
 
 	.h-innerContent{
@@ -869,6 +869,6 @@ iframe{
 	line-height: 2;
 }
 
-.boat{
+.boat, .tree{
 	width: 100%;
 }

@@ -58,10 +58,9 @@
 		</a>
 	</div>
 
-	<p class="darkOrange Winter header setTextCenter setDisplay" id="media_head" style="letter-spacing: 2px;padding-top: 100px;"><strong>MEDIA</strong></p>
-
 	<div class="h-content m-1 animate media-1" id="m_content1">
-		
+		<img src="img/media/book.png" class="boat">
+		<p class="darkOrange Winter header setTextCenter setDisplay" id="media_head" style="letter-spacing: 2px;padding: 20px;"><strong>MEDIA</strong></p>
 		<p class="darkOrange Srinakharinwirot header setTextCenter" id="h_innerHead" style="letter-spacing: 2px;">พระมหาชนกฉบับตีพิมพ์</p>
 		<div class="h-section" id="sec_1">
 			<div class="img-left">
@@ -78,6 +77,8 @@
 	</div>
 
 	<div class="h-content setDisplay m-1 animate" id="m_content2">
+		<img src="img/media/cartoon.png" class="boat">
+		<p class="darkOrange Winter header setTextCenter setDisplay" id="media_head2" style="letter-spacing: 2px;padding: 20px;"><strong>MEDIA</strong></p>
 		<p class="darkOrange Srinakharinwirot header setTextCenter" id="h_innerHead" style="letter-spacing: 2px;">หนังสือการ์ตูนพระมหาชนก</p>
 		<div class="h-section" id="sec_1">
 			<div class="img-left">
@@ -94,6 +95,8 @@
 	</div>
 
 	<div class="h-content setDisplay animate" id="m_content3">
+		<img src="img/media/ani.png" class="boat">
+		<p class="darkOrange Winter header setTextCenter setDisplay" id="media_head3" style="letter-spacing: 2px;padding: 20px;"><strong>MEDIA</strong></p>
 		<p class="darkOrange Srinakharinwirot header setTextCenter" id="h_innerHead" style="letter-spacing: 2px;">แอนิเมชั่นพระมหาชนก</p>
 		<iframe width="90%" height="500" src="https://www.youtube.com/embed/XMBPsnacYWI?autoplay=0" allow="autoplay" frameborder="0" allowfullscreen id="video"></iframe>
 		<!-- allow="autoplay" -->
@@ -214,6 +217,8 @@
 				head_m3.classList.add("darkOrange");
 				toTop.classList.remove("setDisplay");
 				media_head.classList.remove("setDisplay");
+				media_head2.classList.remove("setDisplay");
+				media_head3.classList.remove("setDisplay");
 			}
 		}
 
@@ -228,10 +233,14 @@
 				head_m3.classList.add("setDisplay");
 				toTop.classList.add("setDisplay");
 				media_head.classList.add("setDisplay");
+				media_head2.classList.add("setDisplay");
+				media_head3.classList.add("setDisplay");
 			}else{
 				head_m3.classList.remove("setDisplay");
 				toTop.classList.remove("setDisplay");
 				media_head.classList.remove("setDisplay");
+				media_head2.classList.remove("setDisplay");
+				media_head3.classList.remove("setDisplay");
 			}
 		}
 
