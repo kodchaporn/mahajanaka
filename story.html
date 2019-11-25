@@ -69,12 +69,13 @@
 		</a>
 	</div>
 
-	<img src="img/story/head.png" class="boat setDisplay" id="boat_head">
+	<img src="img/story/head.png" class="boat" id="boat_head">
 	<p class="lightGreen Winter header setTextCenter setDisplay" id="story_head" style="letter-spacing: 2px;"><strong>STORY</strong></p>
 
 
 	<div class="h-content animate" id="m_content1">
-		<p class="lightGreen Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">เนื้อเรื่อง<br>พระมหาชนก</p>
+
+		<!-- <p class="lightGreen Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">เนื้อเรื่อง<br>พระมหาชนก</p> -->
 		<img src="img/story/11.png" class="paragraph" id="img1">
 		<p class="darkGreen s-content fade" id="p1">
 			พระมหากษัตริย์ผู้ครองราชย์นครมิถิลาเมืองหลวงแห่งแคว้นวิเทหะ ทรงมีพระราชโอรสสองพระองค์ คือ พระอริฏฐชนกและพระโปลชนก หลังจากพระราชบิดาสวรรคต พระอริฏฐชนกผู้เป็นพระมหาอุปราชก็เสด็จขึ้นครองราชย์ต่อมาโดยทรงแต่งตั้งพระโปลชนกผู้เป็นน้องชายเป็นพระมหาอุปราช<br><br>
@@ -145,8 +146,6 @@
 				head_m1.classList.add("lightGreen");
 				toTop.classList.remove("setDisplay");
 				story_head.classList.remove("setDisplay");
-				h_innerHead.classList.add("setDisplay");
-				boat_head.classList.remove("setDisplay");
 			}
 		}
 
@@ -160,14 +159,10 @@
 				m4.classList.add("setDisplay");
 				toTop.classList.add("setDisplay");
 				story_head.classList.add("setDisplay");
-				h_innerHead.classList.remove("setDisplay");
-				boat_head.classList.add("setDisplay");
 			}else{
 				head_m2.classList.remove("setDisplay");
 				toTop.classList.remove("setDisplay");
-				h_innerHead.classList.add("setDisplay");
 				story_head.classList.remove("setDisplay");
-				boat_head.classList.remove("setDisplay");
 			}
 		}
 

@@ -528,17 +528,8 @@ a{
 		flex-direction: column;
 		align-items: center;
 	}
-	.displayFlex{
-		display: flex;
-	}
-	.order-1{
-		order: 1;
-	}
-	.order-2{
-		order: 2;
-	}
-	hr{
-		border: 0.2px solid gray;
+	.boat{
+		padding-top: 90px;
 	}
 }
 /*desktop*/
@@ -879,5 +870,5 @@ iframe{
 }
 
 .boat{
-	padding-top: 90px;
+	width: 100%;
 }
