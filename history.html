@@ -65,8 +65,10 @@
 		</a>
 	</div>
 
+	<p class="lightOrange Winter header setTextCenter setDisplay" id="history_head" style="letter-spacing: 2px;padding-top: 100px;"><strong>HISTORY</strong></p>
+
 	<div class="h-content animate " id="h_content1">
-		<p class="lightOrange Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">
+		<p class="lightOrange Srinakharinwirot header setTextCenter" id="h_innerHead" style="letter-spacing: 2px; padding-bottom: 30px;">
 		ผลงานการประพันธ์ของพระบาทสมเด็จ<br>พระปรมินทรมหาภูมิพลอดุลยเดช</p>
 		<div class="h-section paragraph" id="sec_1">
 			<div class="img-left">
@@ -162,7 +164,7 @@
 	</div>
 
 	<div class="h-content1 setDisplay animate" id="h_content2">
-		<p class="lightOrange Srinakharinwirot header" id="h_innerHead" style="letter-spacing: 2px;">ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก</p>
+		<p class="lightOrange Srinakharinwirot header setTextCenter" id="h_innerHead" style="letter-spacing: 2px; padding-bottom: 30px;">ประวัติความเป็นมาของพระราชนิพนธ์พระมหาชนก</p>
 		<div class="h-section" id="sec_0">
 			<div class="img-left">
 				<img src="img/history/img001Re.jpg" class="h_imgContent" id="h_img">
@@ -229,6 +231,7 @@
 				head_m2.classList.remove("setDisplay");
 				head_m2.classList.add("lightOrange");
 				toTop.classList.remove("setDisplay");
+				history_head.classList.remove("setDisplay");
 			}
 		}
 
@@ -241,9 +244,11 @@
 				m3.classList.add("setDisplay");
 				m4.classList.add("setDisplay");
 				toTop.classList.add("setDisplay");
+				history_head.classList.add("setDisplay");
 			}else{
 				head_m2.classList.remove("setDisplay");
 				toTop.classList.remove("setDisplay");
+				history_head.classList.remove("setDisplay");
 			}
 		}
 		window.addEventListener("scroll", ppp);
